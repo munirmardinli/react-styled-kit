@@ -41,7 +41,7 @@
     "@mui/material": "^5.15.10",
     "@mui/styles": "^6.4.5",
     "@mui/x-data-grid-pro": "^8.5.2",
-    "@mui/x-date-pickers-pro": "^6.18.4",
+    "@mui/x-date-pickers-pro": "^8.5.2",
     "dotenv": "^16.4.7",
     "next": "^15.2.4",
     "react": "^19",
