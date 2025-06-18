@@ -46,7 +46,7 @@
     "next": "^15.2.4",
     "react": "^19",
     "react-big-calendar": "^1.17.1",
-    "react-datepicker": "^6.1.0"
+    "react-datepicker": "^8.4.0"
   },
   "devDependencies": {
     "@types/node": "^24.0.3",
