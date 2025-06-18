@@ -1,0 +1,34 @@
+.rbc-overlay > * + * {
+  margin-top: 1px;
+}
+
+.rbc-overlay-header {
+  border-bottom: 1px solid #fff;
+  margin: -10px -10px 5px;
+  padding: 10px 20px;
+}
+
+.rbc-overlay {
+  position: absolute;
+  z-index: 5;
+  border: 1px solid #fff;
+  background-color: rgb(255, 71, 71);
+  -webkit-box-shadow: 0 5px 15px #fff;
+  box-shadow: 0 5px 15px #3b1212;
+  padding: 10px;
+}
+
+.react-calendar {
+  width: 100% !important;
+  border: none !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.react-calendar__navigation__label__labelText {
+  font-weight: 600;
+}
+
+.react-calendar__tile--active {
+  background-color: #c3ebfa !important;
+  color: black !important;
+}
