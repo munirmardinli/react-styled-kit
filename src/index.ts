@@ -1,3 +1,4 @@
+import { pxToRem } from './style/pxToRem';
 import { StyledButton, StyledCloseIcon } from "./style/button"
 import { StyledCalendar,RBCOverlay } from "./style/calendar"
 import {
@@ -64,4 +65,5 @@ export {
 	StyledTypographyCaption,
 	StyledTypographySubcaption,
 	TypographyContainer,
+	pxToRem
 }
