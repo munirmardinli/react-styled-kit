@@ -1,6 +1,34 @@
+/**
+ * @file Styled DataGrid components
+ * @module style/grid
+ * @description Customized MUI DataGridPro components with enhanced styling,
+ * responsive behavior, and theme-aware color schemes.
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @version 1.0.0
+ */
 import { alpha, styled, Theme } from '@mui/material/styles';
 import { DataGridPro, DataGridProProps } from '@mui/x-data-grid-pro';
 
+/**
+ * Styled DataGridPro component
+ * @component StyledDataGrid
+ * @description A highly customized DataGridPro component with:
+ * - Theme-aware color schemes
+ * - Responsive design for all screen sizes
+ * - Enhanced hover and focus states
+ * - Custom header and cell styling
+ * - Optimized pagination controls
+ * @param {DataGridProProps} props - DataGridPro properties
+ * @param {Theme} props.theme - Material-UI theme object
+ * @example
+ * <StyledDataGrid
+ *   rows={data}
+ *   columns={columns}
+ *   pageSize={10}
+ *   checkboxSelection
+ * />
+ */
 export const StyledDataGrid = styled(DataGridPro)<DataGridProProps>(
   ({ theme }) => ({
     'backgroundColor': theme.palette.background.paper,
@@ -140,6 +168,18 @@ export const StyledDataGrid = styled(DataGridPro)<DataGridProProps>(
   }),
 );
 
+/**
+ * Styled grid overlay component
+ * @component StyledGridOverlay
+ * @description Custom overlay for DataGrid states (loading, error, empty)
+ * @param {Object} props - React props
+ * @param {Theme} props.theme - Material-UI theme object
+ * @example
+ * <StyledGridOverlay>
+ *   <CircularProgress />
+ *   <Typography>Loading data...</Typography>
+ * </StyledGridOverlay>
+ */
 export const StyledGridOverlay = styled('div')(
   ({ theme }: { theme: Theme }) => ({
     display: 'flex',

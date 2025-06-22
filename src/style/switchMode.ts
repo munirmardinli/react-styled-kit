@@ -1,6 +1,34 @@
+/**
+ * @file Styled theme mode switch component
+ * @module style/switchMode
+ * @description A customized theme toggle switch with dynamic icons that change
+ * between light and dark mode representations.
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @version 1.0.0
+ */
 import { Switch } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
+/**
+ * Styled theme mode switch component
+ * @component StyledSwitchMode
+ * @description A customized switch component for toggling between light and dark themes with:
+ * - Dynamic SVG icons representing sun (light) and moon (dark)
+ * - Theme-aware colors that adapt to current mode
+ * - Smooth transition animations
+ * - Responsive sizing
+ *
+ * @param {Object} props - React props
+ * @param {Theme} props.theme - Material-UI theme object
+ *
+ * @example
+ * <StyledSwitchMode
+ *   checked={darkMode}
+ *   onChange={toggleTheme}
+ *   inputProps={{ 'aria-label': 'toggle dark mode' }}
+ * />
+ */
 export const StyledSwitchMode = styled(Switch)(({ theme }) => ({
   'width': 62,
   'height': 34,

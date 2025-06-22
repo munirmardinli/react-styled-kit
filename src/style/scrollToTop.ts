@@ -1,8 +1,38 @@
+/**
+ * @file Scroll-to-top components
+ * @module style/scrollToTop
+ * @description Customized floating action button and icon for scroll-to-top functionality
+ * with smooth animations and responsive behavior.
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @version 1.0.0
+ */
 import { KeyboardArrowUp } from '@mui/icons-material';
 import type { FabProps, IconProps } from '@mui/material';
 import { Fab } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
+/**
+ * Styled scroll-to-top floating action button
+ * @component StyledScrollToTopFab
+ * @description A customized FAB (Floating Action Button) for scrolling to the top of the page.
+ * Features include:
+ * - Fixed positioning at bottom-right
+ * - Smooth hover and focus animations
+ * - Responsive sizing
+ * - Theme-aware styling
+ *
+ * @param {FabProps} props - Material-UI Fab props
+ * @param {Theme} props.theme - Material-UI theme object
+ *
+ * @example
+ * <StyledScrollToTopFab
+ *   onClick={scrollToTop}
+ *   aria-label="scroll back to top"
+ * >
+ *   <StykedKeyboardArrowUp />
+ * </StyledScrollToTopFab>
+ */
 export const StyledScrollToTopFab = styled(Fab)<FabProps>(({ theme }) => ({
   'position': 'fixed',
   'color': 'white',
@@ -38,6 +68,23 @@ export const StyledScrollToTopFab = styled(Fab)<FabProps>(({ theme }) => ({
   },
 }));
 
+/**
+ * Styled keyboard arrow-up icon
+ * @component StykedKeyboardArrowUp
+ * @description A customized arrow-up icon with:
+ * - Smooth hover animations
+ * - Decorative pseudo-elements
+ * - Color transitions
+ * - Inherited sizing
+ *
+ * @param {IconProps} props - Material-UI Icon props
+ *
+ * @example
+ * <StykedKeyboardArrowUp
+ *   fontSize="large"
+ *   color="inherit"
+ * />
+ */
 export const StykedKeyboardArrowUp = styled(KeyboardArrowUp)<IconProps>(() => ({
   'fontSize': 'inherit',
   'transition': 'all 0.3s ease',

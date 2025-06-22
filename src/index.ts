@@ -1,34 +1,313 @@
+/**
+ * Utility function to convert pixels to rem units
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @function pxToRem
+ * @param {number} value - The pixel value to convert
+ * @returns {string} The value in rem units
+ * @example
+ * const fontSize = pxToRem(16); // returns '1rem'
+ */
 import { pxToRem } from './style/pxToRem';
-import { StyledButton, StyledCloseIcon } from "./style/button"
-import { StyledCalendar,RBCOverlay } from "./style/calendar"
-import {
-	drawerWidth,
-	AppBar,
-	closedMixin,
-	Drawer,
-	DrawerHeader,
-	openedMixin,
-	StyledListItemButton,
-	StyledListItemIcon,
-	StyledListItemText,
-	StyledMenuItem,
-	Logo,
-	StyledMenuIcon
-} from "./style/drawer"
-import { StyledDataGrid, StyledGridOverlay } from "./style/grid"
-import { StykedKeyboardArrowUp, StyledScrollToTopFab } from "./style/scrollToTop";
-import { Search, SearchIconWrapper, SearchSelect, StyledInputBase } from "./style/search"
-import { StyledSnackbar, StyledSnackbarAlert } from "./style/snackbar";
+/**
+ * Styled button component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledButton
+ * @description A customized button component with consistent styling
+ */
+import { StyledButton } from "./style/button"
+/**
+ * Styled close icon component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledCloseIcon
+ * @description A customized close icon with consistent styling
+ */
+import { StyledCloseIcon } from "./style/button"
+/**
+ * Styled calendar component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledCalendar
+ * @description A customized calendar component with consistent styling
+ */
+import { StyledCalendar } from "./style/calendar"
+/**
+ * Overlay component for RBC (React Big Calendar)
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} RBCOverlay
+ * @description An overlay component for calendar events
+ */
+import { RBCOverlay } from "./style/calendar"
+/**
+ * Width of the drawer component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @constant {number} drawerWidth
+ * @description The width of the drawer in pixels when open
+ */
+import { drawerWidth } from "./style/drawer"
+/**
+ * Styled app bar component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} AppBar
+ * @description A customized app bar with position-aware styling
+ */
+import { AppBar } from "./style/drawer"
+/**
+ * Mixin for closed drawer state
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @function closedMixin
+ * @param {Object} theme - Material-UI theme object
+ * @returns {Object} Style object for closed drawer
+ */
+import { closedMixin } from "./style/drawer"
+/**
+ * Styled drawer component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} Drawer
+ * @description A customized drawer with responsive behavior
+ */
+import { Drawer } from "./style/drawer"
+/**
+ * Styled drawer header component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} DrawerHeader
+ * @description The header section of the drawer
+ */
+import { DrawerHeader } from "./style/drawer"
+/**
+ * Mixin for opened drawer state
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @function openedMixin
+ * @param {Object} theme - Material-UI theme object
+ * @returns {Object} Style object for opened drawer
+ */
+import { openedMixin } from "./style/drawer"
+/**
+ * Styled list item button component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledListItemButton
+ * @description Customized button for list items
+ */
+import { StyledListItemButton } from "./style/drawer"
+/**
+ * Styled list item icon component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledListItemIcon
+ * @description Customized icon for list items
+ */
+import { StyledListItemIcon } from "./style/drawer"
+/**
+ * Styled list item text component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledListItemText
+ * @description Customized text for list items
+ */
+import { StyledListItemText } from "./style/drawer"
+/**
+ * Styled menu item component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledMenuItem
+ * @description Customized menu item with consistent styling
+ */
+import { StyledMenuItem } from "./style/drawer"
+/**
+ * Styled menu icon component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledMenuIcon
+ * @description Customized menu icon with consistent styling
+ */
+import { StyledMenuIcon } from "./style/drawer"
+/**
+ * Application logo component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} Logo
+ * @description The application logo with responsive sizing
+ */
+import { Logo } from "./style/drawer"
+/**
+ * Styled data grid component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledDataGrid
+ * @description Customized data grid with consistent styling
+ */
+import { StyledDataGrid } from "./style/grid"
+/**
+ * Styled grid overlay component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledGridOverlay
+ * @description Customized overlay for the data grid
+ */
+import { StyledGridOverlay } from "./style/grid"
+/**
+ * Styled scroll-to-top FAB component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledScrollToTopFab
+ * @description Customized floating action button for scrolling to top
+ */
+import { StyledScrollToTopFab } from "./style/scrollToTop";
+/**
+ * Styled keyboard arrow up icon
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledKeyboardArrowUp
+ * @description Customized keyboard arrow up icon
+ */
+import { StykedKeyboardArrowUp } from "./style/scrollToTop";
+/**
+ * Search select component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} SearchSelect
+ * @description Customized select input for search functionality
+ */
+import { SearchSelect } from "./style/search"
+/**
+ * Search component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} Search
+ * @description Customized search input container
+ */
+import { Search } from "./style/search"
+/**
+ * Search icon wrapper component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} SearchIconWrapper
+ * @description Wrapper for search icon with proper positioning
+ */
+import { SearchIconWrapper } from "./style/search"
+/**
+ * Styled base input component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledInputBase
+ * @description Customized base input with consistent styling
+ */
+import { StyledInputBase } from "./style/search"
+/**
+ * Styled snackbar component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledSnackbar
+ * @description Customized snackbar notification
+ */
+import { StyledSnackbar } from "./style/snackbar";
+/**
+ * Styled snackbar alert component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledSnackbarAlert
+ * @description Customized alert for snackbar notifications
+ */
+import { StyledSnackbarAlert } from "./style/snackbar";
+/**
+ * Styled mode switch component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledSwitchMode
+ * @description Customized switch for toggling between light/dark mode
+ */
 import { StyledSwitchMode } from "./style/switchMode";
-import { StyledDateInput, StyledDemoContainer, StyledTextField } from "./style/textfield";
+/**
+ * Styled date input component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledDateInput
+ * @description Customized date input field
+ */
+import { StyledDateInput } from "./style/textfield";
+/**
+ * Styled demo container component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledDemoContainer
+ * @description Container for demo components with consistent styling
+ */
+import { StyledDemoContainer } from "./style/textfield";
+/**
+ * Styled text field component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledTextField
+ * @description Customized text input field
+ */
+import { StyledTextField } from "./style/textfield";
+/**
+ * Styled tooltip component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledTooltip
+ * @description Customized tooltip with consistent styling
+ */
 import { StyledTooltip } from "./style/tooltip";
-import {
-	StyledTypography,
-	StyledTypographyCaption,
-	StyledTypographySubcaption,
-	TypographyContainer
-} from "./style/typography";
+/**
+ * Styled caption typography component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledTypographyCaption
+ * @description Caption typography variant with custom styling
+ */
+import { StyledTypographyCaption } from "./style/typography";
+/**
+ * Styled typography component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} StyledTypography
+ * @description Base typography component with consistent styling
+ */
+import { StyledTypography } from "./style/typography";
+/**
+ * Typography container component
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @typedef {React.ComponentType} TypographyContainer
+ * @description Container for typography components with proper spacing
+ */
+import { TypographyContainer } from "./style/typography";
+/**
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * Styled subcaption typography component
+ * @typedef {React.ComponentType} StyledTypographySubcaption
+ * @description Smaller caption typography variant with custom styling
+ */
+import { StyledTypographySubcaption } from "./style/typography";
 
+/**
+ * @file Style package for React components
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @module style
+ * @description This package provides styled components and utility functions for a React application.
+ * It includes styled versions of Material-UI components, custom components, and helper functions.
+ * @version 1.0.0
+ * @exports StyledButton, StyledCloseIcon, StyledCalendar, RBCOverlay, drawerWidth, openedMixin,
+ * closedMixin, DrawerHeader, AppBar, Drawer, StyledListItemText, StyledListItemIcon,
+ * StyledListItemButton, StyledMenuItem, Logo, StyledMenuIcon, StyledScrollToTopFab,
+ * StyledKeyboardArrowUp, StyledDataGrid, StyledGridOverlay, Search, SearchIconWrapper,
+ * StyledInputBase, SearchSelect, StyledSnackbar, StyledSnackbarAlert, StyledSwitchMode,
+ * StyledDateInput, StyledTextField, StyledDemoContainer, StyledTooltip, StyledTypography,
+ * StyledTypographyCaption, StyledTypographySubcaption, TypographyContainer, pxToRem
+ */
 export {
 	StyledButton,
 	StyledCloseIcon,

@@ -1,7 +1,30 @@
+/**
+ * @file Styled button components
+ * @module style/button
+ * @description Customized Material-UI button components with enhanced styling and hover effects
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @version 1.0.0
+ */
 import type { ButtonProps } from '@mui/material';
 import { Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
+/**
+ * Styled button component with dynamic theming
+ * @component StyledButton
+ * @description A highly customizable button component that adapts to theme and variant.
+ * Features include:
+ * - Dynamic background and text colors based on theme mode and variant
+ * - Smooth hover and active state transitions
+ * - Responsive shadow effects
+ * - Consistent border radius
+ * @param {ButtonProps} props - Material-UI Button props
+ * @param {string} [props.variant] - Button variant ('contained', 'outlined', or 'text')
+ * @example
+ * <StyledButton variant="contained">Submit</StyledButton>
+ * <StyledButton variant="outlined">Cancel</StyledButton>
+ */
 export const StyledButton = styled(Button)<ButtonProps>(
   ({ theme, variant }) => ({
     'backgroundColor':
@@ -54,6 +77,21 @@ export const StyledButton = styled(Button)<ButtonProps>(
   }),
 );
 
+/**
+ * Styled close icon button component
+ * @component StyledCloseIcon
+ * @description A specialized button component designed for close/dismiss actions.
+ * Features include:
+ * - Consistent info color scheme
+ * - Smooth hover animations
+ * - Fixed white text color
+ * - Shadow effects
+ * @param {ButtonProps} props - Material-UI Button props
+ * @example
+ * <StyledCloseIcon onClick={handleClose}>
+ *   <CloseIcon />
+ * </StyledCloseIcon>
+ */
 export const StyledCloseIcon = styled(Button)<ButtonProps>(({ theme }) => ({
   'lineHeight': 'initial',
   'border': 'none',

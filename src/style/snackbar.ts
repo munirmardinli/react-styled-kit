@@ -1,3 +1,12 @@
+/**
+ * @file Styled snackbar notification components
+ * @module style/snackbar
+ * @description Customized Material-UI snackbar and alert components with enhanced styling,
+ * theme-aware colors, and interactive effects for notification systems.
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @version 1.0.0
+ */
 import {
   Alert,
   AlertProps,
@@ -6,6 +15,30 @@ import {
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
+/**
+ * Styled snackbar component
+ * @component StyledSnackbar
+ * @description A customized snackbar container with:
+ * - Theme-aware positioning and spacing
+ * - Smooth hover animations
+ * - Responsive shadow effects
+ * - Consistent z-index layering
+ *
+ * @param {SnackbarProps} props - Material-UI Snackbar props
+ * @param {Theme} props.theme - Material-UI theme object
+ *
+ * @example
+ * <StyledSnackbar
+ *   open={open}
+ *   autoHideDuration={6000}
+ *   onClose={handleClose}
+ *   anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
+ * >
+ *   <StyledSnackbarAlert severity="success">
+ *     Action completed successfully!
+ *   </StyledSnackbarAlert>
+ * </StyledSnackbar>
+ */
 export const StyledSnackbar = styled(Snackbar)<SnackbarProps>(({ theme }) => ({
   '& .MuiSnackbar-root': {
     'zIndex': theme.zIndex.snackbar,
@@ -43,6 +76,23 @@ export const StyledSnackbar = styled(Snackbar)<SnackbarProps>(({ theme }) => ({
   },
 }));
 
+/**
+ * Styled snackbar alert component
+ * @component StyledSnackbarAlert
+ * @description A customized alert component for snackbars with:
+ * - Complete variant styling (standard, filled, outlined)
+ * - Severity-based color schemes (error, warning, info, success)
+ * - Interactive hover effects
+ * - Consistent typography and spacing
+ *
+ * @param {AlertProps} props - Material-UI Alert props
+ * @param {Theme} props.theme - Material-UI theme object
+ *
+ * @example
+ * <StyledSnackbarAlert severity="error" variant="filled">
+ *   Error: Action failed to complete!
+ * </StyledSnackbarAlert>
+ */
 export const StyledSnackbarAlert = styled(Alert)<AlertProps>(({ theme }) => ({
   '& .MuiAlert-root': {
     'borderRadius': theme.shape.borderRadius,

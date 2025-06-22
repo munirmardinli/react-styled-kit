@@ -1,3 +1,12 @@
+/**
+ * @file Styled calendar components
+ * @module style/calendar
+ * @description Customized React Big Calendar components with enhanced styling, drag-and-drop functionality,
+ * and responsive design. Includes both the main calendar and overlay components.
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @version 1.0.0
+ */
 import type { Theme } from '@mui/material/styles';
 import { alpha, styled } from '@mui/material/styles';
 import type { CSSProperties } from '@mui/material/styles/createMixins';
@@ -8,7 +17,21 @@ import './calendar.css';
 
 import { pxToRem } from './pxToRem';
 
+/**
+ * Drag-and-drop enabled calendar component
+ * @constant DnDCalendar
+ * @description The base calendar component enhanced with drag-and-drop functionality
+ */
 const DnDCalendar = withDragAndDrop(Calendar) as React.ComponentType<any>;
+
+/**
+ * Responsive text styles for calendar components
+ * @function responsiveTextStyles
+ * @param {Theme} theme - Material-UI theme object
+ * @returns {Record<string, CSSProperties | string | number>} Responsive style object
+ * @description Provides consistent responsive typography across different screen sizes
+ * with smooth animations and proper text wrapping behavior.
+ */
 const responsiveTextStyles = (
   theme: Theme,
 ): Record<string, CSSProperties | string | number> => ({
@@ -52,8 +75,25 @@ const responsiveTextStyles = (
   },
 });
 
+/**
+ * Styled drag-and-drop calendar component
+ * @component StyledCalendar
+ * @description A fully customized calendar component with:
+ * - Responsive design for all screen sizes
+ * - Smooth transitions and animations
+ * - Custom toolbars and headers
+ * - Theme-aware color schemes
+ * - Enhanced event styling
+ * @param {Object} props - React Big Calendar props
+ * @param {Theme} props.theme - Material-UI theme object
+ * @example
+ * <StyledCalendar
+ *   events={events}
+ *   defaultView="week"
+ *   onSelectEvent={handleEventSelect}
+ * />
+ */
 export const StyledCalendar = styled(DnDCalendar)(({ theme }) => ({
-
   'border': `1px solid ${theme.palette.divider}`,
   'color': '#fff',
   'padding': '24px',
@@ -358,6 +398,22 @@ export const StyledCalendar = styled(DnDCalendar)(({ theme }) => ({
   },
 }));
 
+/**
+ * Calendar overlay component
+ * @component RBCOverlay
+ * @description A styled overlay component for calendar events with:
+ * - Absolute positioning
+ * - Theme-aware colors
+ * - Custom shadow effects
+ * - Responsive typography
+ * @param {Object} props - React props
+ * @param {Theme} props.theme - Material-UI theme object
+ * @example
+ * <RBCOverlay>
+ *   <div className="rbc-overlay-header">Event Details</div>
+ *   <div className="rbc-event-content">Meeting with Team</div>
+ * </RBCOverlay>
+ */
 export const RBCOverlay = styled('div')(({ theme }) => ({
   'position': 'absolute',
   'zIndex': 1,

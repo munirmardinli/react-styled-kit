@@ -1,6 +1,34 @@
+/**
+ * @file Styled tooltip component
+ * @module style/tooltip
+ * @description A customized Material-UI tooltip with enhanced styling,
+ * consistent spacing, and theme-aware colors.
+ * @author Munir Mardinli <munir@mardinli.de>
+ * @date 2025-06-20
+ * @version 1.0.0
+ */
 import { Tooltip, TooltipProps } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
+/**
+ * Styled tooltip component
+ * @component StyledTooltip
+ * @description A customized tooltip with:
+ * - Theme-aware dark background and white text
+ * - Consistent spacing and typography
+ * - Shadow effects for depth
+ * - Proper z-index layering
+ * - Responsive touch targets
+ * - Arrow styling for all placements
+ *
+ * @param {TooltipProps} props - Material-UI Tooltip props
+ * @param {Theme} props.theme - Material-UI theme object
+ *
+ * @example
+ * <StyledTooltip title="Click to save" placement="top" arrow>
+ *   <Button>Save</Button>
+ * </StyledTooltip>
+ */
 export const StyledTooltip = styled(Tooltip)<TooltipProps>(({ theme }) => ({
   '& .MuiTooltip-popper': {
     zIndex: theme.zIndex.tooltip,

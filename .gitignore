@@ -8,8 +8,6 @@
 /.next/
 /out/
 
-.vscode
-
 *.DS_Store
 dist
 coverage
@@ -29,6 +27,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .env
-typedoc.json
 
 .eslintcache
+
+docs
