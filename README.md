@@ -80,9 +80,9 @@ const Example = () => (
 
 ## 🧠 Utility Functions
 
-`pxToRem(value: number): string`
+### `pxToRem(value: number): string`
 
-    Converts pixel values to `rem` units based on a base font size of 16px.
+Converts a pixel value to a `rem` unit based on a base font size of `16px`.
 
 ```ts
 pxToRem(16); // '1rem'
