@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/munirmardinli/react-styled-kit/compare/v1.2.1...v1.3.0) (2025-06-23)
+
+
+### Features
+
+* bug fix components preview ([66fdc77](https://github.com/munirmardinli/react-styled-kit/commit/66fdc77b1c823418c4452a1b5712c92e97ebbe5f))
+
 ## [1.2.1](https://github.com/munirmardinli/react-styled-kit/compare/v1.2.0...v1.2.1) (2025-06-23)
 
 
