@@ -1,6 +1,8 @@
+"use client"
 import { StyledButton, StyledCloseIcon } from '../style/button';
 import CloseIcon from '@mui/icons-material/Close';
 import type { Meta, StoryObj } from '@storybook/react';
+import React from 'react';
 
 /**
  * Meta configuration for StyledButton stories

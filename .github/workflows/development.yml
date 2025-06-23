@@ -105,6 +105,8 @@ jobs:
    !startsWith(github.event.head_commit.message, 'chore(release):')
   env:
     STORYBOOK_BASE_PATH: /storybook/
+    UV_THREADPOOL_SIZE: 128
+    NODE_ENV: producation
   steps:
    - uses: actions/checkout@v4
    - name: Setup Node.js
