@@ -14,23 +14,10 @@ const config: StorybookConfig = {
 		name: "@storybook/nextjs-vite",
 		options: {}
 	},
-	viteFinal: async (config) => {
-		process.env.UV_THREADPOOL_SIZE = "128";
-
-		const manualChunks = {
-			mui: [
-				"@mui/material",
-				"@mui/icons-material"
-			],
-			vendors: [
-				"react",
-				"react-dom",
-				"@storybook/react",
-				"@storybook/addon-docs",
-				"@storybook/addon-a11y",
-				'@storybook/addon-themes',
-			]
-		};
+	viteFinal: async (config, { configType }) => {
+		if (configType === 'PRODUCTION') {
+			config.base = '/storybook/';
+		}
 
 		config.build = {
 			...config.build,
@@ -39,24 +26,28 @@ const config: StorybookConfig = {
 				...config.build?.rollupOptions,
 				output: {
 					...config.build?.rollupOptions?.output,
-					manualChunks
+					manualChunks: {
+						mui: ["@mui/material", "@mui/icons-material"],
+						vendors: [
+							"react",
+							"react-dom",
+							"@storybook/react",
+							"@storybook/addon-docs",
+							"@storybook/addon-a11y"
+						],
+					},
 				},
 				onwarn(warning, warn) {
 					if (warning.code === "MODULE_LEVEL_DIRECTIVE") return;
 					warn(warning);
 				},
-				maxParallelFileOps: 50
-			}
+				maxParallelFileOps: 50,
+			},
 		};
-
 		config.optimizeDeps = {
 			...config.optimizeDeps,
-			include: [
-				"@mui/material/Button",
-				"@mui/icons-material/Close"
-			]
+			include: ["@mui/material/Button", "@mui/icons-material/Close"]
 		};
-
 		return config;
 	}
 };
