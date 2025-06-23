@@ -1,26 +1,54 @@
-"use client"
-import { StyledButton, StyledCloseIcon } from '../style/button';
-import CloseIcon from '@mui/icons-material/Close';
-import type { Meta, StoryObj } from '@storybook/react';
-import React from 'react';
+'use client';
 
-/**
- * Meta configuration for StyledButton stories
- */
+import type { Meta, StoryObj } from '@storybook/react';
+import CloseIcon from '@mui/icons-material/Close';
+
+import { StyledButton, StyledCloseIcon } from '../style/button';
+
+/* -------------------------------------------------------------------------- */
+/* 📘 Storybook Metadata                                                      */
+/* -------------------------------------------------------------------------- */
 const meta: Meta<typeof StyledButton> = {
-  title: 'Components/StyledButton',
+  title: 'Components/Buttons/StyledButton',
   component: StyledButton,
   tags: ['autodocs'],
   parameters: {
     docs: {
       description: {
         component: `
-A set of custom MUI-based buttons with consistent styling, responsive theming,
-and smooth hover/active animations.
+### 🔘 StyledButton
 
-Includes:
-- Standard action buttons: contained, outlined, and text
-- A styled close/dismiss button with icon
+Custom-themed button component built on top of [MUI's \`Button\`](https://mui.com/material-ui/react-button/), with full support for all variants and theme overrides.
+
+#### ✅ Features
+- Supports all MUI \`variant\` options: \`contained\`, \`outlined\`, \`text\`
+- Theme-driven colors, padding, and shadows
+- Smooth hover/active animations
+- Designed for consistency across all UI layers
+
+---
+
+### ❌ StyledCloseIcon
+
+An icon-only button component, typically used for dismiss/close actions.
+
+#### ✅ Features
+- Uses MUI's \`IconButton\` under the hood
+- Hover & focus-visible styling
+- Compact and accessible (with \`aria-label\` support)
+
+---
+
+### 📦 Example Variants
+
+| Story               | Description                                |
+|--------------------|--------------------------------------------|
+| Contained          | Primary CTA button (filled)                |
+| Outlined           | Secondary action (border-only)             |
+| Text               | Tertiary/minimal action                    |
+| CloseIconButton    | Icon-only variant for modal/tooltips etc.  |
+
+---
         `.trim(),
       },
     },
@@ -29,46 +57,54 @@ Includes:
 
 export default meta;
 
-/**
- * Contained variant of the StyledButton
- */
+/* -------------------------------------------------------------------------- */
+/* 🔘 Contained Button                                                        */
+/* -------------------------------------------------------------------------- */
 export const Contained: StoryObj<typeof StyledButton> = {
+  name: 'Contained Button',
   args: {
-    children: 'Contained Button',
+    children: 'Save',
     variant: 'contained',
+    onClick: () => alert('Clicked Contained Button'),
   },
 };
 
-/**
- * Outlined variant of the StyledButton
- */
+/* -------------------------------------------------------------------------- */
+/* 🟦 Outlined Button                                                         */
+/* -------------------------------------------------------------------------- */
 export const Outlined: StoryObj<typeof StyledButton> = {
+  name: 'Outlined Button',
   args: {
-    children: 'Outlined Button',
+    children: 'Cancel',
     variant: 'outlined',
+    onClick: () => alert('Clicked Outlined Button'),
   },
 };
 
-/**
- * Text variant of the StyledButton
- */
+/* -------------------------------------------------------------------------- */
+/* 📝 Text Button                                                             */
+/* -------------------------------------------------------------------------- */
 export const Text: StoryObj<typeof StyledButton> = {
+  name: 'Text Button',
   args: {
-    children: 'Text Button',
+    children: 'Learn More',
     variant: 'text',
+    onClick: () => alert('Clicked Text Button'),
   },
 };
 
-/**
- * Close icon button using StyledCloseIcon
- */
-export const CloseButton: StoryObj<typeof StyledCloseIcon> = {
+/* -------------------------------------------------------------------------- */
+/* ❌ Close Icon Button                                                       */
+/* -------------------------------------------------------------------------- */
+export const CloseIconButton: StoryObj<typeof StyledCloseIcon> = {
+  name: 'Close Button (Icon Only)',
   render: (args) => (
     <StyledCloseIcon {...args}>
       <CloseIcon />
     </StyledCloseIcon>
   ),
   args: {
-    'aria-label': 'Close',
+    'aria-label': 'Close dialog',
+    onClick: () => alert('Dialog closed'),
   },
 };

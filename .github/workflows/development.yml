@@ -115,7 +115,7 @@ jobs:
       node-version: 20
    - run: npm ci
    - run: npx typedoc --options typedoc.json
-   - run: npx storybook build
+   - run: npx storybook build --output-dir storybook-static
    - name: Copy Storybook to docs
      run: |
        mkdir -p docs/storybook

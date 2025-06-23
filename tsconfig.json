@@ -22,6 +22,6 @@
 		"removeComments": true,
 		"typeRoots": ["node_modules/@types","src/types/global.d.ts"]
 	},
-	"include": ["src/**/*.ts", "src/stories/Button.stories.tsx"],
+	"include": ["src/**/*.ts"],
 	"exclude": ["node_modules", "dist"]
 }
