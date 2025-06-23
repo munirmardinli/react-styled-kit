@@ -25,7 +25,6 @@ yarn-error.log*
 .vercel
 
 *.tsbuildinfo
-next-env.d.ts
 .env
 
 .eslintcache
@@ -34,3 +33,4 @@ docs
 
 *storybook.log
 storybook-static
+public

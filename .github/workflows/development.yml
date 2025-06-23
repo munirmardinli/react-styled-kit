@@ -95,11 +95,6 @@ jobs:
       path: |
        dist
        node_modules
-   - name: Upload node_modules separately
-     uses: actions/upload-artifact@v4
-     with:
-      name: prod-dependencies
-      path: node_modules
 
  deploy-docs:
   needs: build-prod
@@ -159,11 +154,11 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v4
-   - name: Download node_modules
+   - name: Download Artifact
      uses: actions/download-artifact@v4
      with:
-      name: prod-dependencies
-      path: node_modules
+      name: dist-prod
+      path: .
    - name: Set up Node.js
      uses: actions/setup-node@v4
      with:
