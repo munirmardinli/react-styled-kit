@@ -10988,7 +10988,7 @@
 		}
 	],
 	"packageName": "@munirmardinli_org/react-styled-kit",
-	"packageVersion": "3.0.3",
+	"packageVersion": "3.0.4",
 	"readme": [
 		{
 			"kind": "text",
@@ -11224,7 +11224,7 @@
 		},
 		{
 			"kind": "text",
-			"text": "                                                         | Branding and menu elements              |\n\n## 🧠 Utility Functions\n\n"
+			"text": "                                                         | Branding and menu elements              |\n\n## 🧠 Utility Functions\n\n### "
 		},
 		{
 			"kind": "code",
@@ -11232,7 +11232,7 @@
 		},
 		{
 			"kind": "text",
-			"text": "\n\n    Converts pixel values to "
+			"text": "\n\nConverts a pixel value to a "
 		},
 		{
 			"kind": "code",
@@ -11240,7 +11240,15 @@
 		},
 		{
 			"kind": "text",
-			"text": " units based on a base font size of 16px.\n\n"
+			"text": " unit based on a base font size of "
+		},
+		{
+			"kind": "code",
+			"text": "`16px`"
+		},
+		{
+			"kind": "text",
+			"text": ".\n\n"
 		},
 		{
 			"kind": "code",
