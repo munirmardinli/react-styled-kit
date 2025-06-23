@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/munirmardinli/react-styled-kit/compare/v1.2.0...v1.2.1) (2025-06-23)
+
+
+### Bug Fixes
+
+* bug fix storybook path ([796b6ea](https://github.com/munirmardinli/react-styled-kit/commit/796b6eadf2ddd4a67567321d4a1752fde60de2f5))
+
 # [1.2.0](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.0...v1.2.0) (2025-06-23)
 
 
