@@ -116,8 +116,9 @@
   ],
   "navigationLinks": {
     "Home": "https://munirmardinli.github.io/react-styled-kit",
-    "GitHub": "https://github.com/munirmardinli",
-    "Sitemap": "https://munirmardinli.github.io/react-styled-kit/sitemap.xml"
+    "GitHub": "https://github.com/munirmardinli/react-styled-kit",
+    "Sitemap": "https://munirmardinli.github.io/react-styled-kit/sitemap.xml",
+		"StoryBook": "https://munirmardinli.github.io/react-styled-kit/storybook"
   },
   "validation": {
     "notExported": false,
