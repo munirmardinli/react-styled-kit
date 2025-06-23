@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/munirmardinli/react-styled-kit/compare/v1.0.0...v1.0.1) (2025-06-23)
+
+
+### Bug Fixes
+
+* bug fix npm public ([1fc65af](https://github.com/munirmardinli/react-styled-kit/commit/1fc65af0eb86946809179de65bbc83a06bb52615))
+
 # 1.0.0 (2025-06-23)
 
 
