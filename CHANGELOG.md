@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/munirmardinli/react-styled-kit/compare/v1.0.1...v1.1.0) (2025-06-23)
+
+
+### Features
+
+* add storybook globaly settings ([c90a2ee](https://github.com/munirmardinli/react-styled-kit/commit/c90a2eefad56d5cff28d41eaf104b3f9f1fb24fc))
+
 ## [1.0.1](https://github.com/munirmardinli/react-styled-kit/compare/v1.0.0...v1.0.1) (2025-06-23)
 
 
