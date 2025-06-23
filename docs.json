@@ -10988,11 +10988,283 @@
 		}
 	],
 	"packageName": "@munirmardinli_org/react-styled-kit",
-	"packageVersion": "3.0.2",
+	"packageVersion": "3.0.3",
 	"readme": [
 		{
 			"kind": "text",
-			"text": "# react-styled-kit"
+			"text": "# 🎨 @munirmardinli_org/react-styled-kit\n\n[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)\n[![GitHub Version](https://img.shields.io/github/package-json/v/munirmardinli/react-styled-kit?color=green&label=version)](https://github.com/munirmardinli/react-styled-kit)\n[![TypeScript](https://img.shields.io/badge/lang-typescript-3178C6.svg)](https://www.typescriptlang.org/)\n[![Docs](https://img.shields.io/badge/docs-typedoc-blueviolet.svg)](https://munirmardinli.github.io/react-styled-kit//)\n[![npm](https://img.shields.io/npm/v/@munirmardinli_org/react-styled-kit)](https://www.npmjs.com/package/@munirmardinli_org/react-styled-kit)\n[![GitHub Issues](https://img.shields.io/github/issues/munirmardinli/react-styled-kit)](https://github.com/munirmardinli/react-styled-kit/issues)\n[![GitHub Stars](https://img.shields.io/github/stars/munirmardinli/react-styled-kit)](https://github.com/munirmardinli/react-styled-kit/stargazers)\n[![GitHub Forks](https://img.shields.io/github/forks/munirmardinli/react-styled-kit)](https://github.com/munirmardinli/react-styled-kit/network/members)\n\n# 🎨 "
+		},
+		{
+			"kind": "code",
+			"text": "`@munirmardinli_org/react-styled-kit`"
+		},
+		{
+			"kind": "text",
+			"text": " — Elegant React Component Styling Utilities\n\n> A sleek, scalable component styling toolkit for React, with enhanced Material-UI integration, powerful utilities, and elegant defaults — crafted by [Munir Mardinli](mailto:munir@mardinli.de).\n\n<a href=\"https://www.buymeacoffee.com/munirmardinli\" target=\"_blank\">\n  <img src=\"https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=munirmardinli&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00\" />\n</a>\n\n---\n\n## ✨ Key Features\n- ✅ Fully themed Material-UI component wrappers\n- 🧩 Composable & accessible React UI building blocks\n- 🎨 Unified design language across your app\n- 📐 pxToRem and other utility functions for scalable UIs\n- 🌒 Light & dark theme support out of the box\n- 📱 Responsive layouts with overlay management\n- ⚡ Plug-and-play — use what you need\n---\n\n## 📦 Installation\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```bash\nnpm install @munirmardinli_org/react-styled-kit\n# or\nyarn add @munirmardinli_org/react-styled-kit\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## 🚀 Quick Example\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```tsx\nimport {\n  StyledButton,\n  StyledCalendar,\n  Drawer,\n  AppBar,\n  Search,\n  pxToRem,\n} from \"@munirmardinli_org/react-styled-kit\";\n\nconst Example = () => (\n  <>\n    <AppBar />\n    <Drawer />\n    <Search />\n    <StyledButton>Click me</StyledButton>\n    <p style={{ fontSize: pxToRem(16) }}>This text uses rem units.</p>\n  </>\n);\n\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## 🧱 Components Overview\n\n| Component                                                                                          | Description                             |\n| -------------------------------------------------------------------------------------------------- | --------------------------------------- |\n| "
+		},
+		{
+			"kind": "code",
+			"text": "`StyledButton`"
+		},
+		{
+			"kind": "text",
+			"text": "                                                                                     | Button with unified styling             |\n| "
+		},
+		{
+			"kind": "code",
+			"text": "`StyledCalendar`"
+		},
+		{
+			"kind": "text",
+			"text": "                                                                                   | Custom calendar view                    |\n| "
+		},
+		{
+			"kind": "code",
+			"text": "`Drawer`"
+		},
+		{
+			"kind": "text",
+			"text": ", "
+		},
+		{
+			"kind": "code",
+			"text": "`AppBar`"
+		},
+		{
+			"kind": "text",
+			"text": ", "
+		},
+		{
+			"kind": "code",
+			"text": "`DrawerHeader`"
+		},
+		{
+			"kind": "text",
+			"text": "                                                                 | Layout navigation elements              |\n| "
+		},
+		{
+			"kind": "code",
+			"text": "`Search`"
+		},
+		{
+			"kind": "text",
+			"text": ", "
+		},
+		{
+			"kind": "code",
+			"text": "`SearchSelect`"
+		},
+		{
+			"kind": "text",
+			"text": ", "
+		},
+		{
+			"kind": "code",
+			"text": "`StyledInputBase`"
+		},
+		{
+			"kind": "text",
+			"text": "                                                        | Search and filter UI                    |\n| "
+		},
+		{
+			"kind": "code",
+			"text": "`StyledSnackbar`"
+		},
+		{
+			"kind": "text",
+			"text": ", "
+		},
+		{
+			"kind": "code",
+			"text": "`StyledSnackbarAlert`"
+		},
+		{
+			"kind": "text",
+			"text": "                                                            | Notification components                 |\n| "
+		},
+		{
+			"kind": "code",
+			"text": "`StyledTooltip`"
+		},
+		{
+			"kind": "text",
+			"text": "                                                                                    | Tooltip with custom design              |\n| "
+		},
+		{
+			"kind": "code",
+			"text": "`StyledDataGrid`"
+		},
+		{
+			"kind": "text",
+			"text": ", "
+		},
+		{
+			"kind": "code",
+			"text": "`StyledGridOverlay`"
+		},
+		{
+			"kind": "text",
+			"text": "                                                              | Advanced grid with overlays             |\n| "
+		},
+		{
+			"kind": "code",
+			"text": "`StyledTextField`"
+		},
+		{
+			"kind": "text",
+			"text": ", "
+		},
+		{
+			"kind": "code",
+			"text": "`StyledDateInput`"
+		},
+		{
+			"kind": "text",
+			"text": ", "
+		},
+		{
+			"kind": "code",
+			"text": "`StyledDemoContainer`"
+		},
+		{
+			"kind": "text",
+			"text": "                                        | Form inputs                             |\n| "
+		},
+		{
+			"kind": "code",
+			"text": "`StyledTypography`"
+		},
+		{
+			"kind": "text",
+			"text": ", "
+		},
+		{
+			"kind": "code",
+			"text": "`StyledTypographyCaption`"
+		},
+		{
+			"kind": "text",
+			"text": ", "
+		},
+		{
+			"kind": "code",
+			"text": "`StyledTypographySubcaption`"
+		},
+		{
+			"kind": "text",
+			"text": ", "
+		},
+		{
+			"kind": "code",
+			"text": "`TypographyContainer`"
+		},
+		{
+			"kind": "text",
+			"text": " | Typography utilities                    |\n| "
+		},
+		{
+			"kind": "code",
+			"text": "`StyledSwitchMode`"
+		},
+		{
+			"kind": "text",
+			"text": "                                                                                 | Theme switch toggle                     |\n| "
+		},
+		{
+			"kind": "code",
+			"text": "`StyledScrollToTopFab`"
+		},
+		{
+			"kind": "text",
+			"text": ", "
+		},
+		{
+			"kind": "code",
+			"text": "`StykedKeyboardArrowUp`"
+		},
+		{
+			"kind": "text",
+			"text": "                                                    | Floating action button to scroll to top |\n| "
+		},
+		{
+			"kind": "code",
+			"text": "`Logo`"
+		},
+		{
+			"kind": "text",
+			"text": ", "
+		},
+		{
+			"kind": "code",
+			"text": "`StyledMenuItem`"
+		},
+		{
+			"kind": "text",
+			"text": ", "
+		},
+		{
+			"kind": "code",
+			"text": "`StyledMenuIcon`"
+		},
+		{
+			"kind": "text",
+			"text": "                                                         | Branding and menu elements              |\n\n## 🧠 Utility Functions\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "`pxToRem(value: number): string`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n    Converts pixel values to "
+		},
+		{
+			"kind": "code",
+			"text": "`rem`"
+		},
+		{
+			"kind": "text",
+			"text": " units based on a base font size of 16px.\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```ts\npxToRem(16); // '1rem'\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## 📁 Folder Structure\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```txt\n📦 style\n├── button.ts\n├── calendar.css\n├── calendar.ts\n├── drawer.ts\n├── grid.ts\n├── scrollToTop.ts\n├── search.ts\n├── snackbar.ts\n├── switchMode.ts\n├── textfield.ts\n├── tooltip.ts\n├── typography.ts\n└── pxToRem.ts\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## 👨‍🎨 Author\n\n👤 Munir Mardinli\n\n📧 [munir@mardinli.de](mailto:munir@mardinli.de)\n\n🌐 [mardinli.de](https://mardinli.de)\n\n## 🏷️ License\n\n**MIT License** © [Munir Mardinli](https://linktr.ee/munirmardinli)\n\n<details>\n<summary>Full License Text</summary>\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```text\nMIT License\n\nCopyright (c) 2025 Munir Mardinli\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n</details>"
 		}
 	],
 	"symbolIdMap": {
