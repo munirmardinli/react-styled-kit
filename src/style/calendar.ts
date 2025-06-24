@@ -93,7 +93,7 @@ const responsiveTextStyles = (
  *   onSelectEvent={handleEventSelect}
  * />
  */
-export const StyledCalendar = styled(DnDCalendar)(({ theme }) => ({
+export const StyledCalendar = styled(DnDCalendar)(({ theme }: { theme: Theme }) => ({
   'border': `1px solid ${theme.palette.divider}`,
   'color': '#fff',
   'padding': '24px',
@@ -414,7 +414,7 @@ export const StyledCalendar = styled(DnDCalendar)(({ theme }) => ({
  *   <div className="rbc-event-content">Meeting with Team</div>
  * </RBCOverlay>
  */
-export const RBCOverlay = styled('div')(({ theme }) => ({
+export const RBCOverlay = styled('div')(({ theme }: { theme: Theme }) => ({
   'position': 'absolute',
   'zIndex': 1,
   'border': `1px solid ${theme.palette.text.primary}`,

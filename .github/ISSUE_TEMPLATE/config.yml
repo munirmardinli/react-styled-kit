@@ -1,1 +1,9 @@
+---
 blank_issues_enabled: false
+contact_links:
+ - about: "Please raise issues about the site on its own repo."
+   name: Website
+   url: "https://github.com/munirmardinli/react-styled-kit/issues/new/"
+ - about: "Alternatively, you can use Munir Mardinli Community on Discord."
+   name: Chat
+   url: "https://discord.com/channels/1374884713961099325/1386973854164975707"

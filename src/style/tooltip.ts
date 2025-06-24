@@ -8,7 +8,7 @@
  * @version 1.0.0
  */
 import { Tooltip, TooltipProps } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import { styled, Theme } from '@mui/material/styles';
 
 /**
  * Styled tooltip component
@@ -29,7 +29,7 @@ import { styled } from '@mui/material/styles';
  *   <Button>Save</Button>
  * </StyledTooltip>
  */
-export const StyledTooltip = styled(Tooltip)<TooltipProps>(({ theme }) => ({
+export const StyledTooltip = styled(Tooltip)<TooltipProps>(({ theme }: { theme: Theme }) => ({
   '& .MuiTooltip-popper': {
     zIndex: theme.zIndex.tooltip,
   },

@@ -58,7 +58,6 @@ export default meta;
 /* -------------------------------------------------------------------------- */
 export const Default: StoryObj<typeof StyledScrollToTopFab> = {
   name: 'Default Scroll-to-Top',
-	storyName: 'StyledScrollToTopFab',
   render: (args) => (
     <StyledScrollToTopFab {...args}>
       <StykedKeyboardArrowUp fontSize="large" />

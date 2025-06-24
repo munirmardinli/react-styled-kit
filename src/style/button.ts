@@ -8,7 +8,7 @@
  */
 import type { ButtonProps } from '@mui/material';
 import { Button } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import { styled,Theme } from '@mui/material/styles';
 
 /**
  * Styled button component with dynamic theming
@@ -92,7 +92,7 @@ export const StyledButton = styled(Button)<ButtonProps>(
  *   <CloseIcon />
  * </StyledCloseIcon>
  */
-export const StyledCloseIcon = styled(Button)<ButtonProps>(({ theme }) => ({
+export const StyledCloseIcon = styled(Button)<ButtonProps>(({ theme }: { theme: Theme }) => ({
   'lineHeight': 'initial',
   'border': 'none',
   'borderRadius': '8px',

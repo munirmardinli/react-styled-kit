@@ -8,7 +8,7 @@
  * @version 1.0.0
  */
 import { InputBase, Select, SelectProps } from '@mui/material';
-import { styled, alpha } from '@mui/material/styles';
+import { styled, alpha, Theme } from '@mui/material/styles';
 
 /**
  * Search container component
@@ -27,7 +27,7 @@ import { styled, alpha } from '@mui/material/styles';
  *   <StyledInputBase placeholder="Search..." />
  * </Search>
  */
-export const Search = styled('div')(({ theme }) => ({
+export const Search = styled('div')(({ theme }: { theme: Theme }) => ({
 	'position': 'relative',
 	'display': 'flex',
 	'borderRadius': theme.shape.borderRadius,
@@ -57,7 +57,7 @@ export const Search = styled('div')(({ theme }) => ({
  *   <SearchIcon />
  * </SearchIconWrapper>
  */
-export const SearchIconWrapper = styled('div')(({ theme }) => ({
+export const SearchIconWrapper = styled('div')(({ theme }: { theme: Theme }) => ({
 	padding: theme.spacing(0, 2),
 	height: '100%',
 	position: 'absolute',
@@ -82,7 +82,7 @@ export const SearchIconWrapper = styled('div')(({ theme }) => ({
  *   inputProps={{ 'aria-label': 'search' }}
  * />
  */
-export const StyledInputBase = styled(InputBase)(({ theme }) => ({
+export const StyledInputBase = styled(InputBase)(({ theme }: { theme: Theme }) => ({
 	'color': 'inherit',
 	'marginBottom': 6,
 	'width': '100%',
@@ -119,7 +119,7 @@ export const StyledInputBase = styled(InputBase)(({ theme }) => ({
  *   <MenuItem value="recent">Recent</MenuItem>
  * </SearchSelect>
  */
-export const SearchSelect = styled(Select)<SelectProps>(({ theme }) => ({
+export const SearchSelect = styled(Select)<SelectProps>(({ theme }: { theme: Theme }) => ({
 	'color': 'inherit',
 	'display': 'flex',
 	'width': '25%',

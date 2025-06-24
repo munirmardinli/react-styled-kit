@@ -1,6 +1,6 @@
 {
   "name": "@munirmardinli_org/react-styled-kit",
-  "version": "3.0.13",
+  "version": "3.0.14",
   "description": "A modern React UI kit with styled-components, Material-UI, and powerful data grids. Perfect for building responsive dashboards, admin panels, and enterprise applications.",
   "private": false,
   "sideEffects": false,
@@ -59,9 +59,7 @@
     "build:linux": "tsc && npm run copy-css",
     "build:darwin": "tsc && npm run copy-css",
     "copy-css": "copyfiles -u 1 \"src/**/*.css\" dist",
-    "husky": "husky install",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook": "storybook dev -p 6006"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",

@@ -8,7 +8,7 @@
  * @version 1.0.0
  */
 import { Switch } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import { styled, Theme } from '@mui/material/styles';
 
 /**
  * Styled theme mode switch component
@@ -29,7 +29,7 @@ import { styled } from '@mui/material/styles';
  *   inputProps={{ 'aria-label': 'toggle dark mode' }}
  * />
  */
-export const StyledSwitchMode = styled(Switch)(({ theme }) => ({
+export const StyledSwitchMode = styled(Switch)(({ theme }: { theme: Theme }) => ({
   'width': 62,
   'height': 34,
   'padding': 7,

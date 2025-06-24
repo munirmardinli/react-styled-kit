@@ -10,7 +10,7 @@
 import { KeyboardArrowUp } from '@mui/icons-material';
 import type { FabProps, IconProps } from '@mui/material';
 import { Fab } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import { styled, Theme } from '@mui/material/styles';
 
 /**
  * Styled scroll-to-top floating action button
@@ -33,7 +33,7 @@ import { styled } from '@mui/material/styles';
  *   <StykedKeyboardArrowUp />
  * </StyledScrollToTopFab>
  */
-export const StyledScrollToTopFab = styled(Fab)<FabProps>(({ theme }) => ({
+export const StyledScrollToTopFab = styled(Fab)<FabProps>(({ theme }: { theme: Theme }) => ({
   'position': 'fixed',
   'color': 'white',
   'backgroundColor': 'white',

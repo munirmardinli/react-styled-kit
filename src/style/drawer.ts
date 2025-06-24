@@ -69,7 +69,7 @@ export const closedMixin = (theme: Theme): CSSObject => ({
  * @param {Object} props - React props
  * @param {Theme} props.theme - Material-UI theme object
  */
-export const DrawerHeader = styled('div')(({ theme }) => ({
+export const DrawerHeader = styled('div')(({ theme }: { theme: Theme }) => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'flex-end',
