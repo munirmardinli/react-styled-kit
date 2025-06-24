@@ -1,1 +1,0 @@
-import{g as r}from"./assertThisInitialized-FjZxxP1b.js";import{L as n}from"./iframe-LQwaAxvI.js";const a=r();function c(s){const{theme:o,name:e,props:t}=s;return!o||!o.components||!o.components[e]||!o.components[e].defaultProps?t:n(o.components[e].defaultProps,t)}export{c as g,a as s};
