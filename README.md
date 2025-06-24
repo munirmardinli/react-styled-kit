@@ -10,9 +10,9 @@
 [![GitHub Stars](https://img.shields.io/github/stars/munirmardinli/react-styled-kit)](https://github.com/munirmardinli/react-styled-kit/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/munirmardinli/react-styled-kit)](https://github.com/munirmardinli/react-styled-kit/network/members)
 
-# 🎨 `@munirmardinli_org/react-styled-kit` — Elegant React Component Styling Utilities
+# 🎨 `@munirmardinli_org/react-styled-kit` - Elegant React Component Styling Utilities
 
-> A sleek, scalable component styling toolkit for React, with enhanced Material-UI integration, powerful utilities, and elegant defaults — crafted by [Munir Mardinli](mailto:munir@mardinli.de).
+> A sleek, scalable component styling toolkit for React, with enhanced Material-UI integration, powerful utilities, and elegant defaults - crafted by [Munir Mardinli](mailto:munir@mardinli.de).
 
 <a href="https://www.buymeacoffee.com/munirmardinli" target="_blank">
   <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=munirmardinli&button_colour=40DCA5&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" />
@@ -27,7 +27,7 @@
 - 📐 pxToRem and other utility functions for scalable UIs
 - 🌒 Light & dark theme support out of the box
 - 📱 Responsive layouts with overlay management
-- ⚡ Plug-and-play — use what you need
+- ⚡ Plug-and-play - use what you need
 ---
 
 ## 📦 Installation
