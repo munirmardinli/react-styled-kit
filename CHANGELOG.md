@@ -1,3 +1,10 @@
+## [1.3.6](https://github.com/munirmardinli/react-styled-kit/compare/v1.3.5...v1.3.6) (2025-06-25)
+
+
+### Bug Fixes
+
+* bug fix calendar any type ([b09a832](https://github.com/munirmardinli/react-styled-kit/commit/b09a8325198937f4dfffb6dbf35da31a9d57e40d))
+
 ## [1.3.5](https://github.com/munirmardinli/react-styled-kit/compare/v1.3.4...v1.3.5) (2025-06-24)
 
 ## [1.3.4](https://github.com/munirmardinli/react-styled-kit/compare/v1.3.3...v1.3.4) (2025-06-24)
