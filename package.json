@@ -1,6 +1,6 @@
 {
   "name": "@munirmardinli_org/react-styled-kit",
-  "version": "3.0.16",
+  "version": "3.0.17",
   "description": "A modern React UI kit with styled-components, Material-UI, and powerful data grids. Perfect for building responsive dashboards, admin panels, and enterprise applications.",
   "private": false,
   "sideEffects": false,

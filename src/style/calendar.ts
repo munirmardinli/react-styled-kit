@@ -18,13 +18,6 @@ import './calendar.css';
 import { pxToRem } from './pxToRem';
 
 /**
- * Drag-and-drop enabled calendar component
- * @constant DnDCalendar
- * @description The base calendar component enhanced with drag-and-drop functionality
- */
-const DnDCalendar = withDragAndDrop(Calendar) as React.ComponentType<any>;
-
-/**
  * Responsive text styles for calendar components
  * @function responsiveTextStyles
  * @param {Theme} theme - Material-UI theme object
@@ -93,7 +86,7 @@ const responsiveTextStyles = (
  *   onSelectEvent={handleEventSelect}
  * />
  */
-export const StyledCalendar = styled(DnDCalendar)(({ theme }: { theme: Theme }) => ({
+export const StyledCalendar = styled(Calendar)(({ theme }: { theme: Theme }) => ({
   'border': `1px solid ${theme.palette.divider}`,
   'color': '#fff',
   'padding': '24px',
