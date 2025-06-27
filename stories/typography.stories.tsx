@@ -6,7 +6,7 @@ import {
   StyledTypographyCaption,
   StyledTypographySubcaption,
   TypographyContainer
-} from '../style/typography';
+} from '../src/style/typography';
 import { Box, Stack } from '@mui/material';
 
 /* -------------------------------------------------------------------------- */

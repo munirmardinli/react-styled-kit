@@ -1,7 +1,7 @@
 'use client';
 
 import type { Meta, StoryObj } from '@storybook/react';
-import { StyledDataGrid, StyledGridOverlay } from '../style/grid';
+import { StyledDataGrid, StyledGridOverlay } from '../src/style/grid';
 import { CircularProgress, Typography } from '@mui/material';
 
 /* -------------------------------------------------------------------------- */

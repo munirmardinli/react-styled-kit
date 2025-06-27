@@ -5,7 +5,7 @@ import {
   StyledTextField,
   StyledDateInput,
   StyledDemoContainer
-} from '../style/textfield';
+} from '../src/style/textfield';
 import { useState } from 'react';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';

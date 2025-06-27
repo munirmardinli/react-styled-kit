@@ -3,7 +3,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import CloseIcon from '@mui/icons-material/Close';
 
-import { StyledButton, StyledCloseIcon } from '../style/button';
+import { StyledButton, StyledCloseIcon } from '../src/style/button';
 
 /* -------------------------------------------------------------------------- */
 /* 📘 Storybook Metadata                                                      */

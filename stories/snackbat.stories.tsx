@@ -3,7 +3,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { useState } from 'react';
 import Button from '@mui/material/Button';
-import { StyledSnackbar, StyledSnackbarAlert } from '../style/snackbar';
+import { StyledSnackbar, StyledSnackbarAlert } from '../src/style/snackbar';
 import { AlertProps } from '@mui/material/Alert';
 
 /* -------------------------------------------------------------------------- */

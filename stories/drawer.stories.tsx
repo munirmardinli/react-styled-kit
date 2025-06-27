@@ -16,7 +16,7 @@ import {
 	StyledMenuItem,
 	Logo,
 	StyledMenuIcon,
-} from '../style/drawer';
+} from '../src/style/drawer';
 
 /* -------------------------------------------------------------------------- */
 /* 📘 Storybook Metadata                                                      */

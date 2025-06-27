@@ -2,7 +2,7 @@
 
 import type { Meta, StoryObj } from '@storybook/react';
 import { useState } from 'react';
-import { StyledSwitchMode } from '../style/switchMode';
+import { StyledSwitchMode } from '../src/style/switchMode';
 import { Box, Typography, Stack } from '@mui/material';
 
 /* -------------------------------------------------------------------------- */

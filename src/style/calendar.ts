@@ -9,10 +9,9 @@
  */
 import type { Theme } from '@mui/material/styles';
 import { alpha, styled } from '@mui/material/styles';
-import type { CSSProperties } from '@mui/material/styles/createMixins';
-import { Calendar } from 'react-big-calendar';
+import type { CSSProperties } from '@mui/material/styles';
+import { Calendar, CalendarProps } from 'react-big-calendar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
-import withDragAndDrop from 'react-big-calendar/lib/addons/dragAndDrop';
 import './calendar.css';
 
 import { pxToRem } from './pxToRem';
@@ -86,7 +85,7 @@ const responsiveTextStyles = (
  *   onSelectEvent={handleEventSelect}
  * />
  */
-export const StyledCalendar = styled(Calendar)(({ theme }: { theme: Theme }) => ({
+export const StyledCalendar = styled(Calendar)<CalendarProps>(({ theme }: { theme: Theme }) => ({
   'border': `1px solid ${theme.palette.divider}`,
   'color': '#fff',
   'padding': '24px',

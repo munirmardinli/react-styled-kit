@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import SearchIcon from '@mui/icons-material/Search';
 import MenuItem from '@mui/material/MenuItem';
 
-import { Search, SearchIconWrapper, StyledInputBase, SearchSelect } from '../style/search';
+import { Search, SearchIconWrapper, StyledInputBase, SearchSelect } from '../src/style/search';
 
 /* -------------------------------------------------------------------------- */
 /* 📘 Storybook Metadata                                                      */

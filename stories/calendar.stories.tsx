@@ -1,7 +1,7 @@
 'use client';
 
 import type { Meta, StoryObj } from '@storybook/react';
-import { StyledCalendar, RBCOverlay } from '../style/calendar';
+import { StyledCalendar, RBCOverlay } from '../src/style/calendar';
 
 import { dateFnsLocalizer } from 'react-big-calendar';
 import { format, parse, startOfWeek, getDay } from 'date-fns';

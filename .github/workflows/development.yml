@@ -91,9 +91,9 @@ jobs:
    - name: Upload artifacts
      uses: actions/upload-artifact@v4
      with:
-      name: dist-prod
+      name: lib-prod
       path: |
-       dist
+       lib
        node_modules
 
  deploy-docs:
@@ -167,7 +167,7 @@ jobs:
    - name: Download Artifact
      uses: actions/download-artifact@v4
      with:
-      name: dist-prod
+      name: lib-prod
       path: .
    - name: Set up Node.js
      uses: actions/setup-node@v4

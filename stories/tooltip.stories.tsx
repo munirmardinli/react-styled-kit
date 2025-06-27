@@ -1,7 +1,7 @@
 'use client';
 
 import type { Meta, StoryObj } from '@storybook/react';
-import { StyledTooltip } from '../style/tooltip';
+import { StyledTooltip } from '../src/style/tooltip';
 import Button from '@mui/material/Button';
 import { Stack, Typography, Box } from '@mui/material';
 import InfoIcon from '@mui/icons-material/Info';

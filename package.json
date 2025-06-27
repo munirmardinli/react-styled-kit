@@ -1,6 +1,6 @@
 {
   "name": "@munirmardinli_org/react-styled-kit",
-  "version": "3.0.18",
+  "version": "4.0.3",
   "description": "A modern React UI kit with styled-components, Material-UI, and powerful data grids. Perfect for building responsive dashboards, admin panels, and enterprise applications.",
   "private": false,
   "sideEffects": false,
@@ -27,12 +27,12 @@
     "directory": "packages/core"
   },
   "files": [
-    "dist"
+    "lib"
   ],
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.js"
+      "import": "./lib/index.js",
+      "require": "./lib/index.js"
     }
   },
   "config": {
@@ -51,14 +51,14 @@
       "url": "https://linktr.ee/munirmardinli"
     }
   ],
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "run-script-os",
     "build:win32": "tsc && npm run copy-css",
     "build:linux": "tsc && npm run copy-css",
     "build:darwin": "tsc && npm run copy-css",
-    "copy-css": "copyfiles -u 1 \"src/**/*.css\" dist",
+    "copy-css": "copyfiles -u 1 \"src/**/*.css\" lib",
     "storybook": "storybook dev -p 6006"
   },
   "dependencies": {

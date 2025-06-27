@@ -8,8 +8,9 @@
  * @version 1.0.0
  */
 import { TextField } from '@mui/material';
-import { alpha, styled } from '@mui/material/styles';
+import { alpha, styled, SxProps, Theme } from '@mui/material/styles';
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
+import type {} from '@mui/x-date-pickers/AdapterDayjs';
 import { DateTimePicker } from '@mui/x-date-pickers-pro';
 
 /**
@@ -233,11 +234,16 @@ export const StyledDateInput = styled(DateTimePicker)(({ theme }) => ({
  *   <StyledTextField label="Demo Field" />
  * </StyledDemoContainer>
  */
-export const StyledDemoContainer = styled(DemoContainer)(({ theme }) => ({
-	padding: '16px',
-	backgroundColor: theme.palette.background.default,
-	borderRadius: '8px',
-	boxShadow: theme.shadows[1],
-	maxWidth: '100%',
-	width: '100%',
-}));
+export const StyledDemoContainer = styled(DemoContainer as React.ComponentType<{
+  children?: React.ReactNode;
+  sx?: SxProps<Theme>;
+}>)(
+  ({ theme }) => ({
+    padding: '16px',
+    backgroundColor: theme.palette.background.default,
+    borderRadius: '8px',
+    boxShadow: theme.shadows[1],
+    maxWidth: '100%',
+    width: '100%',
+  })
+);
