@@ -7,19 +7,23 @@
 	"flags": {},
 	"children": [
 		{
-			"id": 154,
-			"name": "@mui/x-date-pickers/internals/demo",
+			"id": 1,
+			"name": "style",
 			"variant": "declaration",
 			"kind": 2,
 			"flags": {},
 			"comment": {
-				"summary": [
-					{
-						"kind": "text",
-						"text": "Type declaration for @mui/x-date-pickers demo container module"
-					}
-				],
+				"summary": [],
 				"blockTags": [
+					{
+						"tag": "@file",
+						"content": [
+							{
+								"kind": "text",
+								"text": "Style package for React components"
+							}
+						]
+					},
 					{
 						"tag": "@author",
 						"content": [
@@ -43,16 +47,25 @@
 						"content": [
 							{
 								"kind": "text",
-								"text": "Declaration for the demo container component from Material UI Date Pickers"
+								"text": "This package provides styled components and utility functions for a React application.\nIt includes styled versions of Material-UI components, custom components, and helper functions."
 							}
 						]
 					},
 					{
-						"tag": "@example",
+						"tag": "@version",
 						"content": [
 							{
-								"kind": "code",
-								"text": "```ts\nimport { DemoContainer } from '@mui/x-date-pickers/internals/demo';\n\n<DemoContainer>\n  {/* Date picker components */}\n</DemoContainer>\n```"
+								"kind": "text",
+								"text": "1.0.0"
+							}
+						]
+					},
+					{
+						"tag": "@exports",
+						"content": [
+							{
+								"kind": "text",
+								"text": "StyledButton, StyledCloseIcon, StyledCalendar, RBCOverlay, drawerWidth, openedMixin,\nclosedMixin, DrawerHeader, AppBar, Drawer, StyledListItemText, StyledListItemIcon,\nStyledListItemButton, StyledMenuItem, Logo, StyledMenuIcon, StyledScrollToTopFab,\nStyledKeyboardArrowUp, StyledDataGrid, StyledGridOverlay, Search, SearchIconWrapper,\nStyledInputBase, SearchSelect, StyledSnackbar, StyledSnackbarAlert, StyledSwitchMode,\nStyledDateInput, StyledTextField, StyledDemoContainer, StyledTooltip, StyledTypography,\nStyledTypographyCaption, StyledTypographySubcaption, TypographyContainer, pxToRem"
 							}
 						]
 					}
@@ -60,27 +73,43 @@
 			},
 			"children": [
 				{
-					"id": 155,
-					"name": "DemoContainer",
-					"variant": "declaration",
-					"kind": 32,
-					"flags": {
-						"isConst": true
-					},
+					"id": 163,
+					"name": "AppBar",
+					"variant": "reference",
+					"kind": 4194304,
+					"flags": {},
 					"comment": {
 						"summary": [
 							{
 								"kind": "text",
-								"text": "Demo container component for date pickers"
+								"text": "Styled app bar component"
 							}
 						],
 						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
 							{
 								"tag": "@description",
 								"content": [
 									{
 										"kind": "text",
-										"text": "A container component used for demonstrating date picker components.\nProvides consistent styling and layout for date picker examples."
+										"text": "A customized app bar with position-aware styling"
 									}
 								]
 							}
@@ -88,87 +117,82 @@
 					},
 					"sources": [
 						{
-							"fileName": "src/types/global.d.ts",
-							"line": 31,
-							"character": 14,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/types/global.d.ts#L31"
-						}
-					],
-					"type": {
-						"type": "reference",
-						"target": {
-							"packageName": "@types/react",
-							"packagePath": "index.d.ts",
-							"qualifiedName": "React.ComponentType"
-						},
-						"typeArguments": [
-							{
-								"type": "reference",
-								"target": {
-									"packageName": "@munirmardinli_org/react-styled-kit",
-									"packagePath": "",
-									"qualifiedName": "T"
-								},
-								"name": "T"
-							}
-						],
-						"name": "React.ComponentType",
-						"package": "@types/react"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Variables",
-					"children": [
-						155
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "src/types/global.d.ts",
-					"line": 24,
-					"character": 0,
-					"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/types/global.d.ts#L24"
-				}
-			]
-		},
-		{
-			"id": 1,
-			"name": "index",
-			"variant": "declaration",
-			"kind": 2,
-			"flags": {},
-			"children": [
-				{
-					"id": 164,
-					"name": "AppBar",
-					"variant": "reference",
-					"kind": 4194304,
-					"flags": {},
-					"sources": [
-						{
 							"fileName": "src/index.ts",
-							"line": 320,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L320"
+							"line": 77,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L77"
 						}
 					],
 					"target": 27
 				},
 				{
-					"id": 162,
+					"id": 164,
 					"name": "closedMixin",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Mixin for closed drawer state"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@function",
+								"content": [
+									{
+										"kind": "text",
+										"text": "closedMixin"
+									}
+								]
+							},
+							{
+								"tag": "@param",
+								"name": "theme",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Material-UI theme object"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Style object for closed drawer"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 318,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L318"
+							"line": 86,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L86"
 						}
 					],
 					"target": 22
@@ -179,220 +203,794 @@
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled drawer component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "A customized drawer with responsive behavior"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 321,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L321"
+							"line": 94,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L94"
 						}
 					],
 					"target": 32
 				},
 				{
-					"id": 163,
+					"id": 166,
 					"name": "DrawerHeader",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled drawer header component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The header section of the drawer"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 319,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L319"
+							"line": 102,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L102"
 						}
 					],
 					"target": 25
 				},
 				{
-					"id": 160,
+					"id": 162,
 					"name": "drawerWidth",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Width of the drawer component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@constant",
+								"content": [
+									{
+										"kind": "text",
+										"text": "drawerWidth"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The width of the drawer in pixels when open"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 316,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L316"
+							"line": 69,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L69"
 						}
 					],
 					"target": 18
 				},
 				{
-					"id": 170,
+					"id": 173,
 					"name": "Logo",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Application logo component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The application logo with responsive sizing"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 326,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L326"
+							"line": 159,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L159"
 						}
 					],
 					"target": 63
 				},
 				{
-					"id": 161,
+					"id": 167,
 					"name": "openedMixin",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Mixin for opened drawer state"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@function",
+								"content": [
+									{
+										"kind": "text",
+										"text": "openedMixin"
+									}
+								]
+							},
+							{
+								"tag": "@param",
+								"name": "theme",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Material-UI theme object"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Style object for opened drawer"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 317,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L317"
+							"line": 111,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L111"
 						}
 					],
 					"target": 19
 				},
 				{
-					"id": 191,
+					"id": 157,
 					"name": "pxToRem",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Utility function to convert pixels to rem units"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@function",
+								"content": [
+									{
+										"kind": "text",
+										"text": "pxToRem"
+									}
+								]
+							},
+							{
+								"tag": "@param",
+								"name": "value",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The pixel value to convert"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The value in rem units"
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nconst fontSize = pxToRem(16); // returns '1rem'\n```"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 347,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L347"
+							"line": 29,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L29"
 						}
 					],
 					"target": 78
 				},
 				{
-					"id": 159,
+					"id": 161,
 					"name": "RBCOverlay",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Overlay component for RBC (React Big Calendar)"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "An overlay component for calendar events"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 315,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L315"
+							"line": 61,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L61"
 						}
 					],
 					"target": 15
 				},
 				{
-					"id": 176,
+					"id": 179,
 					"name": "Search",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Search component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Customized search input container"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 332,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L332"
+							"line": 207,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L207"
 						}
 					],
 					"target": 92
 				},
 				{
-					"id": 177,
+					"id": 180,
 					"name": "SearchIconWrapper",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Search icon wrapper component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Wrapper for search icon with proper positioning"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 333,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L333"
+							"line": 215,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L215"
 						}
 					],
 					"target": 94
 				},
 				{
-					"id": 179,
+					"id": 178,
 					"name": "SearchSelect",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Search select component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Customized select input for search functionality"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 335,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L335"
+							"line": 199,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L199"
 						}
 					],
 					"target": 99
 				},
 				{
-					"id": 173,
+					"id": 177,
 					"name": "StykedKeyboardArrowUp",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled keyboard arrow up icon"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Customized keyboard arrow up icon"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 329,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L329"
+							"line": 191,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L191"
 						}
 					],
 					"target": 87
 				},
 				{
-					"id": 156,
+					"id": 158,
 					"name": "StyledButton",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled button component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "A customized button component with consistent styling"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 312,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L312"
+							"line": 37,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L37"
 						}
 					],
 					"target": 3
 				},
 				{
-					"id": 158,
+					"id": 160,
 					"name": "StyledCalendar",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled calendar component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "A customized calendar component with consistent styling"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 314,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L314"
+							"line": 53,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L53"
 						}
 					],
 					"target": 12
 				},
 				{
-					"id": 157,
+					"id": 159,
 					"name": "StyledCloseIcon",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled close icon component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "A customized close icon with consistent styling"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 313,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L313"
+							"line": 45,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L45"
 						}
 					],
 					"target": 7
@@ -403,44 +1001,155 @@
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled data grid component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Customized data grid with consistent styling"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 330,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L330"
+							"line": 167,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L167"
 						}
 					],
 					"target": 72
 				},
 				{
-					"id": 183,
+					"id": 185,
 					"name": "StyledDateInput",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled date input component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Customized date input field"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 339,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L339"
+							"line": 255,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L255"
 						}
 					],
 					"target": 121
 				},
 				{
-					"id": 185,
+					"id": 186,
 					"name": "StyledDemoContainer",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled demo container component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Container for demo components with consistent styling"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 341,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L341"
+							"line": 263,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L263"
 						}
 					],
 					"target": 124
@@ -451,28 +1160,102 @@
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled grid overlay component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Customized overlay for the data grid"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 331,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L331"
+							"line": 175,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L175"
 						}
 					],
 					"target": 75
 				},
 				{
-					"id": 178,
+					"id": 181,
 					"name": "StyledInputBase",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled base input component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Customized base input with consistent styling"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 334,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L334"
+							"line": 223,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L223"
 						}
 					],
 					"target": 96
@@ -483,286 +1266,836 @@
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled list item button component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Customized button for list items"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 324,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L324"
+							"line": 119,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L119"
 						}
 					],
 					"target": 49
 				},
 				{
-					"id": 167,
+					"id": 169,
 					"name": "StyledListItemIcon",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled list item icon component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Customized icon for list items"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 323,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L323"
+							"line": 127,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L127"
 						}
 					],
 					"target": 42
 				},
 				{
-					"id": 166,
+					"id": 170,
 					"name": "StyledListItemText",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled list item text component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Customized text for list items"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 322,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L322"
+							"line": 135,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L135"
 						}
 					],
 					"target": 35
 				},
 				{
-					"id": 171,
+					"id": 172,
 					"name": "StyledMenuIcon",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled menu icon component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Customized menu icon with consistent styling"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 327,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L327"
+							"line": 151,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L151"
 						}
 					],
 					"target": 68
 				},
 				{
-					"id": 169,
+					"id": 171,
 					"name": "StyledMenuItem",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled menu item component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Customized menu item with consistent styling"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 325,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L325"
+							"line": 143,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L143"
 						}
 					],
 					"target": 56
 				},
 				{
-					"id": 172,
+					"id": 176,
 					"name": "StyledScrollToTopFab",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled scroll-to-top FAB component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Customized floating action button for scrolling to top"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 328,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L328"
+							"line": 183,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L183"
 						}
 					],
 					"target": 83
 				},
 				{
-					"id": 180,
+					"id": 182,
 					"name": "StyledSnackbar",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled snackbar component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Customized snackbar notification"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 336,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L336"
+							"line": 231,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L231"
 						}
 					],
 					"target": 103
 				},
 				{
-					"id": 181,
+					"id": 183,
 					"name": "StyledSnackbarAlert",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled snackbar alert component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Customized alert for snackbar notifications"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 337,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L337"
+							"line": 239,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L239"
 						}
 					],
 					"target": 106
 				},
 				{
-					"id": 182,
+					"id": 184,
 					"name": "StyledSwitchMode",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled mode switch component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Customized switch for toggling between light/dark mode"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 338,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L338"
+							"line": 247,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L247"
 						}
 					],
 					"target": 110
 				},
 				{
-					"id": 184,
+					"id": 187,
 					"name": "StyledTextField",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled text field component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Customized text input field"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 340,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L340"
+							"line": 271,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L271"
 						}
 					],
 					"target": 114
 				},
 				{
-					"id": 186,
+					"id": 188,
 					"name": "StyledTooltip",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled tooltip component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Customized tooltip with consistent styling"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 342,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L342"
+							"line": 279,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L279"
 						}
 					],
-					"target": 128
+					"target": 131
 				},
 				{
-					"id": 187,
+					"id": 190,
 					"name": "StyledTypography",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled typography component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Base typography component with consistent styling"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 343,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L343"
+							"line": 295,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L295"
 						}
 					],
-					"target": 132
+					"target": 135
 				},
 				{
-					"id": 188,
+					"id": 189,
 					"name": "StyledTypographyCaption",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Styled caption typography component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Caption typography variant with custom styling"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 344,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L344"
+							"line": 287,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L287"
 						}
 					],
-					"target": 138
+					"target": 141
 				},
 				{
-					"id": 189,
+					"id": 192,
 					"name": "StyledTypographySubcaption",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20\nStyled subcaption typography component"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Smaller caption typography variant with custom styling"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 345,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L345"
+							"line": 311,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L311"
 						}
 					],
-					"target": 145
+					"target": 148
 				},
 				{
-					"id": 190,
+					"id": 191,
 					"name": "TypographyContainer",
 					"variant": "reference",
 					"kind": 4194304,
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Typography container component"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@author",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Munir Mardinli <munir@mardinli.de>"
+									}
+								]
+							},
+							{
+								"tag": "@date",
+								"content": [
+									{
+										"kind": "text",
+										"text": "2025-06-20"
+									}
+								]
+							},
+							{
+								"tag": "@description",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Container for typography components with proper spacing"
+									}
+								]
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 346,
-							"character": 1,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L346"
+							"line": 303,
+							"character": 9,
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/index.ts#L303"
 						}
 					],
-					"target": 152
+					"target": 155
 				}
 			],
 			"groups": [
 				{
 					"title": "Variables",
 					"children": [
-						164,
-						165,
 						163,
-						160,
-						170,
-						159,
-						176,
-						177,
-						179,
-						173,
-						156,
-						158,
-						157,
-						174,
-						183,
-						185,
-						175,
-						178,
-						168,
-						167,
+						165,
 						166,
-						171,
-						169,
-						172,
+						162,
+						173,
+						161,
+						179,
 						180,
-						181,
-						182,
-						184,
+						178,
+						177,
+						158,
+						160,
+						159,
+						174,
+						185,
 						186,
+						175,
+						181,
+						168,
+						169,
+						170,
+						172,
+						171,
+						176,
+						182,
+						183,
+						184,
 						187,
 						188,
+						190,
 						189,
-						190
+						192,
+						191
 					]
 				},
 				{
 					"title": "Functions",
 					"children": [
-						162,
-						161,
-						191
+						164,
+						167,
+						157
 					]
 				}
 			],
@@ -1718,9 +3051,9 @@
 					"sources": [
 						{
 							"fileName": "src/style/calendar.ts",
-							"line": 410,
+							"line": 409,
 							"character": 13,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/style/calendar.ts#L410"
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/style/calendar.ts#L409"
 						}
 					],
 					"type": {
@@ -1883,9 +3216,9 @@
 					"sources": [
 						{
 							"fileName": "src/style/calendar.ts",
-							"line": 89,
+							"line": 88,
 							"character": 13,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/style/calendar.ts#L89"
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/style/calendar.ts#L88"
 						}
 					],
 					"type": {
@@ -1940,6 +3273,32 @@
 										],
 										"name": "MUIStyledCommonProps",
 										"package": "@mui/system"
+									},
+									{
+										"type": "reference",
+										"target": {
+											"packageName": "@types/react-big-calendar",
+											"packagePath": "index.d.ts",
+											"qualifiedName": "CalendarProps"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": {
+													"packageName": "@types/react-big-calendar",
+													"packagePath": "index.d.ts",
+													"qualifiedName": "Event"
+												},
+												"name": "Event",
+												"package": "@types/react-big-calendar"
+											},
+											{
+												"type": "intrinsic",
+												"name": "object"
+											}
+										],
+										"name": "CalendarProps",
+										"package": "@types/react-big-calendar"
 									}
 								]
 							},
@@ -7463,9 +8822,9 @@
 					"sources": [
 						{
 							"fileName": "src/style/textfield.ts",
-							"line": 140,
+							"line": 141,
 							"character": 13,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/style/textfield.ts#L140"
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/style/textfield.ts#L141"
 						}
 					],
 					"type": {
@@ -7636,9 +8995,9 @@
 					"sources": [
 						{
 							"fileName": "src/style/textfield.ts",
-							"line": 236,
+							"line": 237,
 							"character": 13,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/style/textfield.ts#L236"
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/style/textfield.ts#L237"
 						}
 					],
 					"type": {
@@ -7650,13 +9009,132 @@
 						},
 						"typeArguments": [
 							{
-								"type": "intrinsic",
-								"name": "any"
+								"type": "intersection",
+								"types": [
+									{
+										"type": "reflection",
+										"declaration": {
+											"id": 125,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 126,
+													"name": "children",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "src/style/textfield.ts",
+															"line": 238,
+															"character": 2,
+															"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/style/textfield.ts#L238"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"packageName": "@types/react",
+															"packagePath": "index.d.ts",
+															"qualifiedName": "React.ReactNode"
+														},
+														"name": "ReactNode",
+														"package": "@types/react",
+														"qualifiedName": "React.ReactNode"
+													}
+												},
+												{
+													"id": 127,
+													"name": "sx",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "src/style/textfield.ts",
+															"line": 239,
+															"character": 2,
+															"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/style/textfield.ts#L239"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"packageName": "@mui/system",
+															"packagePath": "styleFunctionSx/styleFunctionSx.d.ts",
+															"qualifiedName": "SxProps"
+														},
+														"typeArguments": [
+															{
+																"type": "reference",
+																"target": {
+																	"packageName": "@mui/material",
+																	"packagePath": "styles/createThemeNoVars.d.ts",
+																	"qualifiedName": "Theme"
+																},
+																"name": "Theme",
+																"package": "@mui/material"
+															}
+														],
+														"name": "SxProps",
+														"package": "@mui/system"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														126,
+														127
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/style/textfield.ts",
+													"line": 237,
+													"character": 79,
+													"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/style/textfield.ts#L237"
+												}
+											]
+										}
+									},
+									{
+										"type": "reference",
+										"target": {
+											"packageName": "@mui/system",
+											"packagePath": "createStyled/createStyled.d.ts",
+											"qualifiedName": "MUIStyledCommonProps"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": {
+													"packageName": "@mui/material",
+													"packagePath": "styles/createThemeNoVars.d.ts",
+													"qualifiedName": "Theme"
+												},
+												"name": "Theme",
+												"package": "@mui/material"
+											}
+										],
+										"name": "MUIStyledCommonProps",
+										"package": "@mui/system"
+									}
+								]
 							},
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 125,
+									"id": 128,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -7666,7 +9144,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 126,
+									"id": 129,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -7767,9 +9245,9 @@
 					"sources": [
 						{
 							"fileName": "src/style/textfield.ts",
-							"line": 37,
+							"line": 38,
 							"character": 13,
-							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/style/textfield.ts#L37"
+							"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/style/textfield.ts#L38"
 						}
 					],
 					"type": {
@@ -7893,9 +9371,9 @@
 													"sources": [
 														{
 															"fileName": "src/style/textfield.ts",
-															"line": 39,
+															"line": 40,
 															"character": 5,
-															"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/style/textfield.ts#L39"
+															"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/style/textfield.ts#L40"
 														}
 													],
 													"type": {
@@ -7914,9 +9392,9 @@
 													"sources": [
 														{
 															"fileName": "src/style/textfield.ts",
-															"line": 39,
+															"line": 40,
 															"character": 22,
-															"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/style/textfield.ts#L39"
+															"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/style/textfield.ts#L40"
 														}
 													],
 													"type": {
@@ -7937,9 +9415,9 @@
 											"sources": [
 												{
 													"fileName": "src/style/textfield.ts",
-													"line": 39,
+													"line": 40,
 													"character": 3,
-													"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/style/textfield.ts#L39"
+													"url": "https://github.com/munirmardinli/react-styled-kit/blob/main/src/style/textfield.ts#L40"
 												}
 											]
 										}
@@ -7993,7 +9471,7 @@
 			]
 		},
 		{
-			"id": 127,
+			"id": 130,
 			"name": "style/tooltip",
 			"variant": "declaration",
 			"kind": 2,
@@ -8050,7 +9528,7 @@
 			},
 			"children": [
 				{
-					"id": 128,
+					"id": 131,
 					"name": "StyledTooltip",
 					"variant": "declaration",
 					"kind": 32,
@@ -8170,7 +9648,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 129,
+									"id": 132,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -8180,7 +9658,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 130,
+									"id": 133,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -8198,7 +9676,7 @@
 				{
 					"title": "Variables",
 					"children": [
-						128
+						131
 					]
 				}
 			],
@@ -8212,7 +9690,7 @@
 			]
 		},
 		{
-			"id": 131,
+			"id": 134,
 			"name": "style/typography",
 			"variant": "declaration",
 			"kind": 2,
@@ -8269,7 +9747,7 @@
 			},
 			"children": [
 				{
-					"id": 132,
+					"id": 135,
 					"name": "StyledTypography",
 					"variant": "declaration",
 					"kind": 32,
@@ -8926,7 +10404,7 @@
 									{
 										"type": "reflection",
 										"declaration": {
-											"id": 133,
+											"id": 136,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
@@ -8943,14 +10421,14 @@
 									{
 										"type": "reflection",
 										"declaration": {
-											"id": 134,
+											"id": 137,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"children": [
 												{
-													"id": 135,
+													"id": 138,
 													"name": "level",
 													"variant": "declaration",
 													"kind": 1024,
@@ -9000,7 +10478,7 @@
 												{
 													"title": "Properties",
 													"children": [
-														135
+														138
 													]
 												}
 											],
@@ -9019,7 +10497,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 136,
+									"id": 139,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -9029,7 +10507,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 137,
+									"id": 140,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -9043,7 +10521,7 @@
 					"defaultValue": "..."
 				},
 				{
-					"id": 138,
+					"id": 141,
 					"name": "StyledTypographyCaption",
 					"variant": "declaration",
 					"kind": 32,
@@ -9710,7 +11188,7 @@
 									{
 										"type": "reflection",
 										"declaration": {
-											"id": 139,
+											"id": 142,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
@@ -9727,14 +11205,14 @@
 									{
 										"type": "reflection",
 										"declaration": {
-											"id": 140,
+											"id": 143,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"children": [
 												{
-													"id": 142,
+													"id": 145,
 													"name": "color",
 													"variant": "declaration",
 													"kind": 1024,
@@ -9764,7 +11242,7 @@
 													}
 												},
 												{
-													"id": 141,
+													"id": 144,
 													"name": "level",
 													"variant": "declaration",
 													"kind": 1024,
@@ -9814,8 +11292,8 @@
 												{
 													"title": "Properties",
 													"children": [
-														142,
-														141
+														145,
+														144
 													]
 												}
 											],
@@ -9834,7 +11312,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 143,
+									"id": 146,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -9844,7 +11322,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 144,
+									"id": 147,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -9858,7 +11336,7 @@
 					"defaultValue": "..."
 				},
 				{
-					"id": 145,
+					"id": 148,
 					"name": "StyledTypographySubcaption",
 					"variant": "declaration",
 					"kind": 32,
@@ -10525,7 +12003,7 @@
 									{
 										"type": "reflection",
 										"declaration": {
-											"id": 146,
+											"id": 149,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
@@ -10542,14 +12020,14 @@
 									{
 										"type": "reflection",
 										"declaration": {
-											"id": 147,
+											"id": 150,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"children": [
 												{
-													"id": 149,
+													"id": 152,
 													"name": "color",
 													"variant": "declaration",
 													"kind": 1024,
@@ -10570,7 +12048,7 @@
 													}
 												},
 												{
-													"id": 148,
+													"id": 151,
 													"name": "level",
 													"variant": "declaration",
 													"kind": 1024,
@@ -10620,8 +12098,8 @@
 												{
 													"title": "Properties",
 													"children": [
-														149,
-														148
+														152,
+														151
 													]
 												}
 											],
@@ -10640,7 +12118,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 150,
+									"id": 153,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -10650,7 +12128,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 151,
+									"id": 154,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -10664,7 +12142,7 @@
 					"defaultValue": "..."
 				},
 				{
-					"id": 152,
+					"id": 155,
 					"name": "TypographyContainer",
 					"variant": "declaration",
 					"kind": 32,
@@ -10795,7 +12273,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 153,
+									"id": 156,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -10813,10 +12291,10 @@
 				{
 					"title": "Variables",
 					"children": [
-						132,
-						138,
-						145,
-						152
+						135,
+						141,
+						148,
+						155
 					]
 				}
 			],
@@ -10834,7 +12312,6 @@
 		{
 			"title": "Modules",
 			"children": [
-				154,
 				1,
 				2,
 				11,
@@ -10846,13 +12323,13 @@
 				102,
 				109,
 				113,
-				127,
-				131
+				130,
+				134
 			]
 		}
 	],
 	"packageName": "@munirmardinli_org/react-styled-kit",
-	"packageVersion": "3.0.18",
+	"packageVersion": "4.0.3",
 	"readme": [
 		{
 			"kind": "text",
@@ -11762,23 +13239,23 @@
 		},
 		"125": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "",
+			"packagePath": "src/style/textfield.ts",
 			"qualifiedName": "__type"
 		},
 		"126": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "",
-			"qualifiedName": "__type"
+			"packagePath": "src/style/textfield.ts",
+			"qualifiedName": "__type.children"
 		},
 		"127": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "src/style/tooltip.ts",
-			"qualifiedName": ""
+			"packagePath": "src/style/textfield.ts",
+			"qualifiedName": "__type.sx"
 		},
 		"128": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "src/style/tooltip.ts",
-			"qualifiedName": "StyledTooltip"
+			"packagePath": "",
+			"qualifiedName": "__type"
 		},
 		"129": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
@@ -11787,118 +13264,118 @@
 		},
 		"130": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "",
-			"qualifiedName": "__type"
+			"packagePath": "src/style/tooltip.ts",
+			"qualifiedName": ""
 		},
 		"131": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "src/style/typography.ts",
-			"qualifiedName": ""
+			"packagePath": "src/style/tooltip.ts",
+			"qualifiedName": "StyledTooltip"
 		},
 		"132": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "src/style/typography.ts",
-			"qualifiedName": "StyledTypography"
+			"packagePath": "",
+			"qualifiedName": "__type"
 		},
 		"133": {
-			"packageName": "@mui/material",
-			"packagePath": "Typography/Typography.d.ts",
+			"packageName": "@munirmardinli_org/react-styled-kit",
+			"packagePath": "",
 			"qualifiedName": "__type"
 		},
 		"134": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/style/typography.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": ""
 		},
 		"135": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/style/typography.ts",
-			"qualifiedName": "__type.level"
+			"qualifiedName": "StyledTypography"
 		},
 		"136": {
-			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "",
+			"packageName": "@mui/material",
+			"packagePath": "Typography/Typography.d.ts",
 			"qualifiedName": "__type"
 		},
 		"137": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "",
+			"packagePath": "src/style/typography.ts",
 			"qualifiedName": "__type"
 		},
 		"138": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/style/typography.ts",
-			"qualifiedName": "StyledTypographyCaption"
+			"qualifiedName": "__type.level"
 		},
 		"139": {
-			"packageName": "@mui/material",
-			"packagePath": "Typography/Typography.d.ts",
+			"packageName": "@munirmardinli_org/react-styled-kit",
+			"packagePath": "",
 			"qualifiedName": "__type"
 		},
 		"140": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "src/style/typography.ts",
+			"packagePath": "",
 			"qualifiedName": "__type"
 		},
 		"141": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/style/typography.ts",
-			"qualifiedName": "__type.level"
+			"qualifiedName": "StyledTypographyCaption"
 		},
 		"142": {
-			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "src/style/typography.ts",
-			"qualifiedName": "__type.color"
-		},
-		"143": {
-			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "",
-			"qualifiedName": "__type"
-		},
-		"144": {
-			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "",
-			"qualifiedName": "__type"
-		},
-		"145": {
-			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "src/style/typography.ts",
-			"qualifiedName": "StyledTypographySubcaption"
-		},
-		"146": {
 			"packageName": "@mui/material",
 			"packagePath": "Typography/Typography.d.ts",
 			"qualifiedName": "__type"
 		},
-		"147": {
+		"143": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/style/typography.ts",
+			"qualifiedName": "__type"
+		},
+		"144": {
+			"packageName": "@munirmardinli_org/react-styled-kit",
+			"packagePath": "src/style/typography.ts",
+			"qualifiedName": "__type.level"
+		},
+		"145": {
+			"packageName": "@munirmardinli_org/react-styled-kit",
+			"packagePath": "src/style/typography.ts",
+			"qualifiedName": "__type.color"
+		},
+		"146": {
+			"packageName": "@munirmardinli_org/react-styled-kit",
+			"packagePath": "",
+			"qualifiedName": "__type"
+		},
+		"147": {
+			"packageName": "@munirmardinli_org/react-styled-kit",
+			"packagePath": "",
 			"qualifiedName": "__type"
 		},
 		"148": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/style/typography.ts",
-			"qualifiedName": "__type.level"
+			"qualifiedName": "StyledTypographySubcaption"
 		},
 		"149": {
-			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "src/style/typography.ts",
-			"qualifiedName": "__type.color"
+			"packageName": "@mui/material",
+			"packagePath": "Typography/Typography.d.ts",
+			"qualifiedName": "__type"
 		},
 		"150": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "",
+			"packagePath": "src/style/typography.ts",
 			"qualifiedName": "__type"
 		},
 		"151": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "",
-			"qualifiedName": "__type"
+			"packagePath": "src/style/typography.ts",
+			"qualifiedName": "__type.level"
 		},
 		"152": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/style/typography.ts",
-			"qualifiedName": "TypographyContainer"
+			"qualifiedName": "__type.color"
 		},
 		"153": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
@@ -11907,58 +13384,58 @@
 		},
 		"154": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "src/types/global.d.ts",
-			"qualifiedName": "\"@mui/x-date-pickers/internals/demo\""
+			"packagePath": "",
+			"qualifiedName": "__type"
 		},
 		"155": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "src/types/global.d.ts",
-			"qualifiedName": "\"@mui/x-date-pickers/internals/demo\".DemoContainer"
+			"packagePath": "src/style/typography.ts",
+			"qualifiedName": "TypographyContainer"
 		},
 		"156": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
-			"packagePath": "src/index.ts",
-			"qualifiedName": "StyledButton"
+			"packagePath": "",
+			"qualifiedName": "__type"
 		},
 		"157": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "StyledCloseIcon"
+			"qualifiedName": "pxToRem"
 		},
 		"158": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "StyledCalendar"
+			"qualifiedName": "StyledButton"
 		},
 		"159": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "RBCOverlay"
+			"qualifiedName": "StyledCloseIcon"
 		},
 		"160": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "drawerWidth"
+			"qualifiedName": "StyledCalendar"
 		},
 		"161": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "openedMixin"
+			"qualifiedName": "RBCOverlay"
 		},
 		"162": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "closedMixin"
+			"qualifiedName": "drawerWidth"
 		},
 		"163": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "DrawerHeader"
+			"qualifiedName": "AppBar"
 		},
 		"164": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "AppBar"
+			"qualifiedName": "closedMixin"
 		},
 		"165": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
@@ -11968,12 +13445,12 @@
 		"166": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "StyledListItemText"
+			"qualifiedName": "DrawerHeader"
 		},
 		"167": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "StyledListItemIcon"
+			"qualifiedName": "openedMixin"
 		},
 		"168": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
@@ -11983,27 +13460,27 @@
 		"169": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "StyledMenuItem"
+			"qualifiedName": "StyledListItemIcon"
 		},
 		"170": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "Logo"
+			"qualifiedName": "StyledListItemText"
 		},
 		"171": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "StyledMenuIcon"
+			"qualifiedName": "StyledMenuItem"
 		},
 		"172": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "StyledScrollToTopFab"
+			"qualifiedName": "StyledMenuIcon"
 		},
 		"173": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "StykedKeyboardArrowUp"
+			"qualifiedName": "Logo"
 		},
 		"174": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
@@ -12018,82 +13495,87 @@
 		"176": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "Search"
+			"qualifiedName": "StyledScrollToTopFab"
 		},
 		"177": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "SearchIconWrapper"
+			"qualifiedName": "StykedKeyboardArrowUp"
 		},
 		"178": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "StyledInputBase"
+			"qualifiedName": "SearchSelect"
 		},
 		"179": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "SearchSelect"
+			"qualifiedName": "Search"
 		},
 		"180": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "StyledSnackbar"
+			"qualifiedName": "SearchIconWrapper"
 		},
 		"181": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "StyledSnackbarAlert"
+			"qualifiedName": "StyledInputBase"
 		},
 		"182": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "StyledSwitchMode"
+			"qualifiedName": "StyledSnackbar"
 		},
 		"183": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "StyledDateInput"
+			"qualifiedName": "StyledSnackbarAlert"
 		},
 		"184": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "StyledTextField"
+			"qualifiedName": "StyledSwitchMode"
 		},
 		"185": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "StyledDemoContainer"
+			"qualifiedName": "StyledDateInput"
 		},
 		"186": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "StyledTooltip"
+			"qualifiedName": "StyledDemoContainer"
 		},
 		"187": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "StyledTypography"
+			"qualifiedName": "StyledTextField"
 		},
 		"188": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "StyledTypographyCaption"
+			"qualifiedName": "StyledTooltip"
 		},
 		"189": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "StyledTypographySubcaption"
+			"qualifiedName": "StyledTypographyCaption"
 		},
 		"190": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "TypographyContainer"
+			"qualifiedName": "StyledTypography"
 		},
 		"191": {
 			"packageName": "@munirmardinli_org/react-styled-kit",
 			"packagePath": "src/index.ts",
-			"qualifiedName": "pxToRem"
+			"qualifiedName": "TypographyContainer"
+		},
+		"192": {
+			"packageName": "@munirmardinli_org/react-styled-kit",
+			"packagePath": "src/index.ts",
+			"qualifiedName": "StyledTypographySubcaption"
 		}
 	},
 	"files": {
@@ -12124,8 +13606,8 @@
 			"9": 102,
 			"10": 109,
 			"11": 113,
-			"12": 127,
-			"13": 131
+			"12": 130,
+			"13": 134
 		}
 	}
 }
