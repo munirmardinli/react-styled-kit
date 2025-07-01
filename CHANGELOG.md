@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.6...v1.1.7) (2025-07-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @mui/x-date-pickers-pro to v8.6.0 ([974f224](https://github.com/munirmardinli/react-styled-kit/commit/974f2249915a9fb5fb47059599d8dd6f5f2a7820))
+
 ## [1.1.6](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.5...v1.1.6) (2025-07-01)
 
 ## [1.1.5](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.4...v1.1.5) (2025-07-01)
