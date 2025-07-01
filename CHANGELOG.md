@@ -1,3 +1,5 @@
+## [1.1.6](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.5...v1.1.6) (2025-07-01)
+
 ## [1.1.5](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.4...v1.1.5) (2025-07-01)
 
 
