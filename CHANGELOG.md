@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.4...v1.1.5) (2025-07-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @emotion/styled to v11.14.1 ([4d77e6b](https://github.com/munirmardinli/react-styled-kit/commit/4d77e6beea2729e1e556e415e70c26929733f64a))
+
 ## [1.1.4](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.3...v1.1.4) (2025-07-01)
 
 ## [1.1.3](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.2...v1.1.3) (2025-07-01)
