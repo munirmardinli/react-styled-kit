@@ -20,7 +20,7 @@ jobs:
  prepare:
   runs-on: ubuntu-latest
   outputs:
-   node_modules_cache: ${{ steps.set-cache-output.outputs.cache-hit }}
+   node_modules_cache: ${{ steps.cache-node-modules.outputs.cache-hit }}
   steps:
    - uses: actions/checkout@v4
    - name: Cache node modules
@@ -31,12 +31,8 @@ jobs:
        node_modules
        .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-      restore-keys: ${{ runner.os }}-node-
    - name: Install dependencies
      run: npm ci
-   - name: Set cache output
-     id: set-cache-output
-     run: echo "cache-hit=$(ls node_modules | wc -l | tr -d ' ')" >> $GITHUB_OUTPUT
 
  lint:
   needs: prepare
@@ -86,14 +82,6 @@ jobs:
       npm run build
      env:
       NODE_ENV: production
-      PORT: 9095
-   - name: Upload artifacts
-     uses: actions/upload-artifact@v4
-     with:
-      name: lib-prod
-      path: |
-       lib
-       node_modules
 
  deploy-docs:
   needs: build-prod
@@ -119,7 +107,6 @@ jobs:
        node_modules
        .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-   - run: npm ci
    - run: npx typedoc --options typedoc.json
    - run: npx storybook build --output-dir storybook-static
    - name: Copy Storybook to docs
@@ -161,9 +148,6 @@ jobs:
        .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
 
-   - name: Install dependencies
-     run: npm ci
-
    - name: Run Semantic Release
      env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -178,16 +162,6 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v4
-   - name: Download Artifact
-     uses: actions/download-artifact@v4
-     with:
-      name: lib-prod
-      path: .
-   - name: Set up Node.js
-     uses: actions/setup-node@v4
-     with:
-      node-version: 20
-      registry-url: "https://registry.npmjs.org"
    - name: Restore cache
      uses: actions/cache@v4
      with:
@@ -195,6 +169,8 @@ jobs:
        node_modules
        .npm
       key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+   - name: Prepublish setup
+     run: npm run build
    - name: Publish to NPM
      run: npm publish --access public
      env:
