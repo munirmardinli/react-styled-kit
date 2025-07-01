@@ -9,6 +9,9 @@ on:
 
 env:
  NPM_REGISTRY_TOKEN: ${{ secrets.NPM_TOKEN }}
+ NPM_REGISTRY_URL: https://registry.npmjs.org
+ NODE_VERSION: 20
+ NODE_ENV: producation
 
 permissions:
  contents: write
@@ -81,7 +84,7 @@ jobs:
      run: |
       npm run build
      env:
-      NODE_ENV: production
+      NODE_ENV: ${{ env.NODE_ENV }}
 
  deploy-docs:
   needs: build-prod
@@ -93,13 +96,13 @@ jobs:
   env:
     STORYBOOK_BASE_PATH: /storybook/
     UV_THREADPOOL_SIZE: 128
-    NODE_ENV: producation
+    NODE_ENV: production
   steps:
    - uses: actions/checkout@v4
    - name: Setup Node.js
      uses: actions/setup-node@v4
      with:
-      node-version: 20
+      node-version: ${{ env.NODE_VERSION }}
    - name: Restore cache
      uses: actions/cache@v4
      with:
@@ -138,7 +141,7 @@ jobs:
    - name: Use Node.js
      uses: actions/setup-node@v4
      with:
-      node-version: 20
+      node-version: ${{ env.NODE_VERSION }}
 
    - name: Restore cache
      uses: actions/cache@v4
@@ -162,6 +165,11 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v4
+   - name: Set up Node.js
+     uses: actions/setup-node@v4
+     with:
+      node-version: ${{ env.NODE_VERSION }}
+      registry-url: ${{ env.NPM_REGISTRY_URL }}
    - name: Restore cache
      uses: actions/cache@v4
      with:
