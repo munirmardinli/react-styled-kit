@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/munirmardinli/react-styled-kit/compare/v1.0.2...v1.1.0) (2025-07-01)
+
+
+### Features
+
+* add cursor setup ([8daf472](https://github.com/munirmardinli/react-styled-kit/commit/8daf4724883615c053693497e682a58cd19006d9))
+
 ## [1.0.2](https://github.com/munirmardinli/react-styled-kit/compare/v1.0.1...v1.0.2) (2025-07-01)
 
 ## [1.0.1](https://github.com/munirmardinli/react-styled-kit/compare/v1.0.0...v1.0.1) (2025-07-01)
