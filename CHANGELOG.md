@@ -1,3 +1,11 @@
+## [1.1.10](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.9...v1.1.10) (2025-08-05)
+
+
+### Bug Fixes
+
+* upgrade @mui/styles from 6.4.12 to 6.5.0 ([719c19c](https://github.com/munirmardinli/react-styled-kit/commit/719c19cfd30949d9ad67254f89e95a4932a4f5b8))
+* upgrade @mui/x-date-pickers-pro from 8.6.0 to 8.7.0 ([03b16a1](https://github.com/munirmardinli/react-styled-kit/commit/03b16a1ddbd77bf4c3044a290c2b54ea13b28bef))
+
 ## [1.1.9](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.8...v1.1.9) (2025-07-16)
 
 ## [1.1.8](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.7...v1.1.8) (2025-07-07)
