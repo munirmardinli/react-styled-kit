@@ -1,3 +1,11 @@
+## [1.1.16](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.15...v1.1.16) (2025-08-05)
+
+
+### Bug Fixes
+
+* **deps:** update material-ui monorepo to v7.3.0 ([df947d6](https://github.com/munirmardinli/react-styled-kit/commit/df947d67ddc0e77eb9d2095ef548345d2c5c258a))
+* upgrade @mui/x-data-grid-pro from 8.6.0 to 8.7.0 ([fd49c9b](https://github.com/munirmardinli/react-styled-kit/commit/fd49c9ba37bb1f2da66fe88c4b115b80a2d8d8bf))
+
 ## [1.1.15](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.14...v1.1.15) (2025-08-05)
 
 ## [1.1.14](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.13...v1.1.14) (2025-08-05)
