@@ -1,3 +1,10 @@
+## [1.1.13](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.12...v1.1.13) (2025-08-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to v15.4.5 ([08572a3](https://github.com/munirmardinli/react-styled-kit/commit/08572a36e56eb76854dd4c94011600d5062847e2))
+
 ## [1.1.12](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.11...v1.1.12) (2025-08-05)
 
 ## [1.1.11](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.10...v1.1.11) (2025-08-05)
