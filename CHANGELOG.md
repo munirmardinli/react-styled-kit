@@ -1,3 +1,10 @@
+## [1.1.17](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.16...v1.1.17) (2025-08-05)
+
+
+### Bug Fixes
+
+* **chore:** Remove duplicate dependencies ([e24f2d9](https://github.com/munirmardinli/react-styled-kit/commit/e24f2d928d34c9262a4f32066a2648dd13eee6c5))
+
 ## [1.1.16](https://github.com/munirmardinli/react-styled-kit/compare/v1.1.15...v1.1.16) (2025-08-05)
 
 
