@@ -21,6 +21,7 @@
 ---
 
 ## ✨ Key Features
+
 - ✅ Fully themed Material-UI component wrappers
 - 🧩 Composable & accessible React UI building blocks
 - 🎨 Unified design language across your app
@@ -28,6 +29,7 @@
 - 🌒 Light & dark theme support out of the box
 - 📱 Responsive layouts with overlay management
 - ⚡ Plug-and-play - use what you need
+
 ---
 
 ## 📦 Installation
@@ -59,7 +61,6 @@ const Example = () => (
     <p style={{ fontSize: pxToRem(16) }}>This text uses rem units.</p>
   </>
 );
-
 ```
 
 ## 🧱 Components Overview
@@ -146,4 +147,5 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
 </details>

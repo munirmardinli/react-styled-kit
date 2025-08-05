@@ -7,8 +7,8 @@
  * @date 2025-06-20
  * @version 1.0.0
  */
-import { InputBase, Select, SelectProps } from '@mui/material';
-import { styled, alpha, Theme } from '@mui/material/styles';
+import { InputBase, Select, SelectProps } from "@mui/material";
+import { styled, alpha, Theme } from "@mui/material/styles";
 
 /**
  * Search container component
@@ -27,20 +27,20 @@ import { styled, alpha, Theme } from '@mui/material/styles';
  *   <StyledInputBase placeholder="Search..." />
  * </Search>
  */
-export const Search = styled('div')(({ theme }: { theme: Theme }) => ({
-	'position': 'relative',
-	'display': 'flex',
-	'borderRadius': theme.shape.borderRadius,
-	'backgroundColor': alpha(theme.palette.common.white, 0.15),
-	'&:hover': {
-		backgroundColor: alpha(theme.palette.common.white, 0.25),
-	},
-	'marginLeft': 0,
-	'width': '100%',
-	[theme.breakpoints.up('sm')]: {
-		marginLeft: theme.spacing(0),
-		width: 'auto',
-	},
+export const Search = styled("div")(({ theme }: { theme: Theme }) => ({
+ position: "relative",
+ display: "flex",
+ borderRadius: theme.shape.borderRadius,
+ backgroundColor: alpha(theme.palette.common.white, 0.15),
+ "&:hover": {
+  backgroundColor: alpha(theme.palette.common.white, 0.25),
+ },
+ marginLeft: 0,
+ width: "100%",
+ [theme.breakpoints.up("sm")]: {
+  marginLeft: theme.spacing(0),
+  width: "auto",
+ },
 }));
 
 /**
@@ -57,15 +57,17 @@ export const Search = styled('div')(({ theme }: { theme: Theme }) => ({
  *   <SearchIcon />
  * </SearchIconWrapper>
  */
-export const SearchIconWrapper = styled('div')(({ theme }: { theme: Theme }) => ({
-	padding: theme.spacing(0, 2),
-	height: '100%',
-	position: 'absolute',
-	pointerEvents: 'none',
-	display: 'flex',
-	alignItems: 'center',
-	justifyContent: 'center',
-}));
+export const SearchIconWrapper = styled("div")(
+ ({ theme }: { theme: Theme }) => ({
+  padding: theme.spacing(0, 2),
+  height: "100%",
+  position: "absolute",
+  pointerEvents: "none",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+ }),
+);
 
 /**
  * Styled input base component
@@ -82,22 +84,24 @@ export const SearchIconWrapper = styled('div')(({ theme }: { theme: Theme }) => 
  *   inputProps={{ 'aria-label': 'search' }}
  * />
  */
-export const StyledInputBase = styled(InputBase)(({ theme }: { theme: Theme }) => ({
-	'color': 'inherit',
-	'marginBottom': 6,
-	'width': '100%',
-	'& .MuiInputBase-input': {
-		padding: theme.spacing(1, 1, 1, 0),
-		paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-		transition: theme.transitions.create('width'),
-		[theme.breakpoints.up('sm')]: {
-			'width': '12ch',
-			'&:focus': {
-				width: '20ch',
-			},
-		},
-	},
-}));
+export const StyledInputBase = styled(InputBase)(
+ ({ theme }: { theme: Theme }) => ({
+  color: "inherit",
+  marginBottom: 6,
+  width: "100%",
+  "& .MuiInputBase-input": {
+   padding: theme.spacing(1, 1, 1, 0),
+   paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+   transition: theme.transitions.create("width"),
+   [theme.breakpoints.up("sm")]: {
+    width: "12ch",
+    "&:focus": {
+     width: "20ch",
+    },
+   },
+  },
+ }),
+);
 
 /**
  * Search select component
@@ -119,31 +123,33 @@ export const StyledInputBase = styled(InputBase)(({ theme }: { theme: Theme }) =
  *   <MenuItem value="recent">Recent</MenuItem>
  * </SearchSelect>
  */
-export const SearchSelect = styled(Select)<SelectProps>(({ theme }: { theme: Theme }) => ({
-	'color': 'inherit',
-	'display': 'flex',
-	'width': '25%',
-	'borderRadius': theme.shape.borderRadius,
-	'backgroundColor': 'transparent !important',
-	'&::before, &::after': {
-		border: 'none !important',
-	},
-	'&.Mui-focused': {
-		backgroundColor: 'transparent !important',
-	},
-	'& .MuiInputBase-input': {
-		padding: theme.spacing(1, 1, 1, 0),
-		paddingLeft: 'calc(1em)',
-		backgroundColor: 'transparent !important',
-		[theme.breakpoints.up('sm')]: {
-			width: '30ch',
-		},
-	},
-	'&:focus': {
-		outline: 'none',
-		backgroundColor: 'transparent !important',
-	},
-	'& .MuiSelect-select:focus': {
-		backgroundColor: 'transparent !important',
-	},
-}));
+export const SearchSelect = styled(Select)<SelectProps>(
+ ({ theme }: { theme: Theme }) => ({
+  color: "inherit",
+  display: "flex",
+  width: "25%",
+  borderRadius: theme.shape.borderRadius,
+  backgroundColor: "transparent !important",
+  "&::before, &::after": {
+   border: "none !important",
+  },
+  "&.Mui-focused": {
+   backgroundColor: "transparent !important",
+  },
+  "& .MuiInputBase-input": {
+   padding: theme.spacing(1, 1, 1, 0),
+   paddingLeft: "calc(1em)",
+   backgroundColor: "transparent !important",
+   [theme.breakpoints.up("sm")]: {
+    width: "30ch",
+   },
+  },
+  "&:focus": {
+   outline: "none",
+   backgroundColor: "transparent !important",
+  },
+  "& .MuiSelect-select:focus": {
+   backgroundColor: "transparent !important",
+  },
+ }),
+);

@@ -94,9 +94,9 @@ jobs:
    github.ref == 'refs/heads/main' &&
    !startsWith(github.event.head_commit.message, 'chore(release):')
   env:
-    STORYBOOK_BASE_PATH: /storybook/
-    UV_THREADPOOL_SIZE: 128
-    NODE_ENV: production
+   STORYBOOK_BASE_PATH: /storybook/
+   UV_THREADPOOL_SIZE: 128
+   NODE_ENV: production
   steps:
    - uses: actions/checkout@v4
    - name: Setup Node.js
@@ -114,8 +114,8 @@ jobs:
    - run: npx storybook build --output-dir storybook-static
    - name: Copy Storybook to docs
      run: |
-       mkdir -p docs/storybook
-       cp -r storybook-static/* docs/storybook/
+      mkdir -p docs/storybook
+      cp -r storybook-static/* docs/storybook/
    - name: Deploy to gh-pages branch
      uses: peaceiris/actions-gh-pages@v4
      with:
