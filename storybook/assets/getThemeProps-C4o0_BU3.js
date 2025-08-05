@@ -1,1 +1,0 @@
-import{c as r}from"./styled-CeY5bLqF.js";import{w as n}from"./iframe-Bon1a5A0.js";const c=r();function a(s){const{theme:o,name:e,props:t}=s;return!o||!o.components||!o.components[e]||!o.components[e].defaultProps?t:n(o.components[e].defaultProps,t)}export{a as g,c as s};
